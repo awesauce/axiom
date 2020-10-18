@@ -16,9 +16,9 @@
 }
 
 .icon-heart {
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><path fill='#{url-col($color-background)}' stroke='#{url-col($color-body)}' stroke-width='#{$iconStrokeWidth}' stroke-linecap='#{$cap}' stroke-linejoin='#{$join}' d='M32,52c10.6-6.6,26.8-23.4,18.5-34C42.1,7.3,32,20,32,20S21.9,7.3,13.5,18C5.2,28.6,21.4,45.4,32,52z'/></svg>");
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><path fill='#{url-col($color-background)}' stroke='#{url-col($color-body)}' stroke-width='#{$iconStrokeWidth}' stroke-linejoin='#{$join}' d='M32,52c10.6-6.6,26.8-23.4,18.5-34C42.1,7.3,32,20,32,20S21.9,7.3,13.5,18C5.2,28.6,21.4,45.4,32,52z'/></svg>");
   &.ic-on {
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><path fill='#{url-col($color-primary)}' stroke='#{url-col($color-body)}' stroke-width='#{$iconStrokeWidth}' stroke-linecap='#{$cap}' stroke-linejoin='#{$join}' d='M32,52c10.6-6.6,26.8-23.4,18.5-34C42.1,7.3,32,20,32,20S21.9,7.3,13.5,18C5.2,28.6,21.4,45.4,32,52z'/></svg>");
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><path fill='#{url-col($color-primary)}' stroke='#{url-col($color-body)}' stroke-width='#{$iconStrokeWidth}' stroke-linejoin='#{$join}' d='M32,52c10.6-6.6,26.8-23.4,18.5-34C42.1,7.3,32,20,32,20S21.9,7.3,13.5,18C5.2,28.6,21.4,45.4,32,52z'/></svg>");
   }
 }
 
