@@ -1,0 +1,41 @@
+//
+//     /\   \ /  |  / \  |\  /|
+//    /  \  / \  |  \ /  | \/ |
+//
+// Message
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.message {
+  max-width: 50.0rem;
+  margin: 1.4rem auto;
+  padding: 0.5rem 1.0rem;
+  color: $color-red;
+  border: 0.1rem solid $color-red;
+  border-left: 1.2rem solid $color-red;
+  border-radius: 0.3rem;
+}
+
+.info {
+  color: $color-medium;
+  border: 0.1rem solid $color-medium;
+  border-radius: 0.3rem;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  padding: 0.1rem 0.2rem;
+  vertical-align: 0.2rem;
+  margin-right: -5.0rem;
+}
+
+.tag {
+  background-color: $color-body;
+  color: $color-background !important;
+  border-radius: 0.3rem;
+  padding: 0.1rem 0.4rem;
+  font-size: 1.5rem;
+  position: relative;
+  top: -.25rem;
+}
+
+a:hover > .tag {
+  background-color: $color-primary-hover;
+}

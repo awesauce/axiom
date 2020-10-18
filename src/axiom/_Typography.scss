@@ -1,0 +1,61 @@
+//
+//     /\   \ /  |  / \  |\  /|
+//    /  \  / \  |  \ /  | \/ |
+//
+// Typography
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+b, strong {
+  font-weight: $font-weight-bold;
+}
+
+h1 {
+  font-size: 5rem;
+  line-height: 1.2;
+  @if ($font-h1-stack != $font-stack) {
+    font-family: $font-h1-stack;
+  }
+  font-weight: $font-h1-weight;
+  letter-spacing: $font-h1-letter-spacing;
+  @if $font-h1-is-uppercase {
+    text-transform: uppercase;
+  }
+}
+
+h2 {
+  font-size: 3.6rem;
+  line-height: 1.25;
+  @if ($font-h2-stack != $font-stack) {
+    font-family: $font-h2-stack;
+  }
+  font-weight: $font-h2-weight;
+  letter-spacing: $font-h2-letter-spacing;
+  @if $font-h2-is-uppercase {
+    text-transform: uppercase;
+  }
+}
+
+
+@media (min-width: $media-larger-than-mobile) {
+  h1 {
+    font-size: 7rem;
+  }
+  h2 {
+    font-size: 4.6rem;
+  }
+}
+
+::selection {
+  background: $color-primary;
+  color: $color-background;
+}
+
+// some text utility classes
+
+.center-text {
+  text-align: center;
+}
+
+.justify-text {
+  text-align: justify;
+}

@@ -1,0 +1,47 @@
+//
+//     /\   \ /  |  / \  |\  /|
+//    /  \  / \  |  \ /  | \/ |
+//
+//  Semantic  Minimalist  Future
+//    Created by Tim, Dec 2019
+//  
+
+// Font
+$font-stack: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+$font-weight-regular: 400;
+$font-weight-bold: 700;
+$font-letter-spacing: .01em;
+
+$border-radius: .4rem;
+
+$isIconRounded: true;
+$iconStrokeWidth: 3;
+
+// Colors
+//$color-primary: #605987;
+$color-primary: #9e95d3;
+
+// All modules
+// @import 'axiom/axiom';
+
+@import 'axiom/Variables';
+@import 'axiom/Base';
+
+@import 'axiom/Article';
+@import 'axiom/Blockquote';
+@import 'axiom/Button';
+@import 'axiom/Code';
+@import 'axiom/Colors';
+@import 'axiom/Footer';
+@import 'axiom/Form';
+@import 'axiom/FormRow';
+@import 'axiom/Grid';
+@import 'axiom/Icons';
+@import 'axiom/Image';
+@import 'axiom/Link';
+@import 'axiom/Message';
+@import 'axiom/Nav';
+@import 'axiom/Section';
+@import 'axiom/Table';
+@import 'axiom/Typography';
+@import 'axiom/Utility';

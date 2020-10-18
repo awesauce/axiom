@@ -1,0 +1,141 @@
+//
+//     /\   \ /  |  / \  |\  /|
+//    /  \  / \  |  \ /  | \/ |
+//
+// Button
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.button-row {
+  display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin: 0.5rem -0.5rem;
+	& > * {
+		margin: 0.5rem;
+	}
+}
+
+.button,
+button,
+[role='button'],
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+	background-color: $color-primary;
+	border: .1rem solid $color-primary;
+	border-radius: $border-radius;
+	color: $color-light;
+	cursor: pointer;
+	display: inline-block;
+	//font-size: 1.1rem;
+	//padding: 0 3.0rem;
+	font-size: 1.3rem;
+	padding: 0 2.0rem;
+	//font-weight: $font-weight-bold;
+	height: 3.8rem;
+	letter-spacing: .1rem;
+	line-height: 3.8rem;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	white-space: nowrap;
+
+  font-family: $font-h2-stack;
+  font-weight: $font-h2-weight;
+  letter-spacing: $font-h2-letter-spacing;
+
+	// Needed to fix text size difference on inputs
+	//font-family: $font-stack;
+  
+
+	&:focus,
+	&:hover {
+		background-color: $color-primary-hover;
+		border-color: $color-primary-hover;
+		color: $color-light;
+		outline: 0;
+	}
+
+	&[disabled] {
+		cursor: default;
+		opacity: .5;
+
+		&:focus,
+		&:hover {
+			background-color: $color-primary;
+			border-color: $color-primary;
+		}
+	}
+
+	&.button-outline {
+		background-color: transparent;
+		color: $color-primary;
+
+		&:focus,
+		&:hover {
+			background-color: transparent;
+			border-color: $color-primary-hover;
+			color: $color-primary-hover;
+		}
+
+		&[disabled] {
+
+			&:focus,
+			&:hover {
+				border-color: inherit;
+				color: $color-primary;
+			}
+		}
+	}
+
+	&.button-clear {
+		background-color: transparent;
+		border-color: transparent;
+		color: $color-primary;
+
+		&:focus,
+		&:hover {
+			background-color: transparent;
+			border-color: transparent;
+			color: $color-primary-hover;
+		}
+
+		&[disabled] {
+
+			&:focus,
+			&:hover {
+				color: $color-primary;
+			}
+		}
+  }
+  
+	&.button-small {
+		font-size: 1.0rem;
+		padding: 0 1.0rem;
+		height: 2.8rem;
+		line-height: 2.8rem;
+	}
+
+	&.button-large {
+		font-size: 2.4rem;
+		padding: 0 3rem;
+		letter-spacing: .24rem;
+		height: 6rem;
+		line-height: 6rem;
+		& > * {
+			padding: .6rem 1.6rem;
+			border-right: .1rem solid $color-light;
+		}
+		*:first-child {
+			margin-left: -2rem;
+		}
+		*:last-child {
+			border-right: 0;
+			margin-right: -2rem;
+		}
+		.button-sub {
+			font-weight: $font-weight-regular;
+		}
+	}
+
+}

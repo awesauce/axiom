@@ -1,0 +1,48 @@
+//
+//     /\   \ /  |  / \  |\  /|
+//    /  \  / \  |  \ /  | \/ |
+//
+// Utility
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.fixed {
+	position: fixed;
+	z-index: 9999;
+}
+
+// used with select-row and other flex rows
+.justify-end {
+	justify-content: flex-end;
+}
+.justify-center {
+	justify-content: center;
+}
+
+// Float either direction
+.float-left {
+	float: left;
+}
+
+.float-right {
+	float: right;
+}
+
+// hides
+.hide-small, .hide-small-medium {
+	display: none;
+}
+
+@media (min-width: $media-larger-than-mobile) {
+  .hide-small {
+		display: block;
+  }
+}
+
+@media (min-width: $media-larger-than-tablet) {
+  .hide-small-medium {
+		display: block;
+	}
+	.hide-large {
+		display: none;
+	}
+}

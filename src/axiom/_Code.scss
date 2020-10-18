@@ -1,0 +1,22 @@
+//
+//     /\   \ /  |  / \  |\  /|
+//    /  \  / \  |  \ /  | \/ |
+//
+// Code
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+code {
+	background: $color-light;
+	border-radius: $border-radius;
+	margin: 0 .2rem ;
+	padding: .2rem .5rem;
+	position: relative;
+	top: -.2rem;
+}
+
+pre {
+	background: $color-light;
+	border-left: .3rem solid $color-primary;
+	overflow-y: hidden;
+	padding: .2rem .5rem;
+}

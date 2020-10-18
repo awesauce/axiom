@@ -1,0 +1,39 @@
+//
+//     /\   \ /  |  / \  |\  /|
+//    /  \  / \  |  \ /  | \/ |
+//
+// Article
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+article {
+  position: relative;
+  margin: 0 auto;
+  max-width: 72rem;
+
+  figure {
+    padding: 0;
+    margin: 0 -2rem; // match section padding
+    color: $color-medium;
+
+    figcaption {
+      padding: 0 2rem;
+    }
+  }
+}
+
+@media (min-width: $media-larger-than-mobile) {
+  article {
+    figure {
+      margin: 0 -6rem; // match section padding
+    }
+  }
+}
+
+@media (min-width: $media-larger-than-tablet) {
+  article {
+    max-width: 86rem;
+    figure {
+      margin: 0 -10rem; // match section padding
+    }
+  }
+}

@@ -1,0 +1,23 @@
+//
+//     /\   \ /  |  / \  |\  /|
+//    /  \  / \  |  \ /  | \/ |
+//
+// Colors
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+@mixin color($name, $color, $fg-color) {
+  .color-#{$name} {
+    color: $color !important;
+    border-color: $color !important;
+  }
+  .bg-#{$name} {
+    background-color: $color !important;
+    color: $fg-color;
+  }
+}
+
+@include color("page", $color-background, $color-body);
+@include color("primary", $color-primary, $color-background);
+@include color("light", $color-light, $color-body);
+@include color("medium", $color-medium, $color-body);
+@include color("dark", $color-dark, $color-light);

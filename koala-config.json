@@ -1,0 +1,18 @@
+{
+  "mappings": [
+    {
+      "src": "/src",
+      "dest": "/dist"
+    }
+  ],
+  "ignores": [
+    "*.css"
+  ],
+  "options": {
+    "outputStyle": "compressed",
+    "lineComments": false,
+    "debugInfo": false,
+    "sourceMap": false,
+    "autoprefix": false
+  }
+}
