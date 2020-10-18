@@ -1,5 +1,5 @@
 
-![AXIOM](/icons/axiom.svg =256x)
+<img alt="AXIOM" src="/icons/axiom.svg" width="256">
 
 # A X I O M
 
