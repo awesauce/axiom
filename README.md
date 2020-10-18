@@ -1,5 +1,5 @@
 
-![Semantic](/icons/axiom.svg)
+![AXIOM](/icons/axiom.svg =256x)
 
 # A X I O M
 
