@@ -13,5 +13,5 @@ This is a CSS framework designed for automatic branding using awesauce.
 * Semantic, Light, SEO Friendly
 * Brandable
 
-Examples: [AXIOM Demo Template Work In Progress](https://awesauce.github.io/axiom/)
+Examples: [AXIOM Demo Template Work In Progress](https://awesauce.github.io/axiom/examples)
 *WARNING: Currently examples are a mess. I'm just making this link for my own convenience.*
