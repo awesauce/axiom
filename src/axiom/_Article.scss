@@ -5,6 +5,56 @@
 // Article
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
+time, address {
+  display: inline;
+  font-style: normal;
+  @if ($font-h2-stack != $font-stack) {
+    font-family: $font-h2-stack;
+  }
+  font-weight: $font-h2-weight;
+  letter-spacing: $font-h2-letter-spacing;
+  @if $font-h2-is-uppercase {
+    text-transform: uppercase;
+  }
+}
+
+$content-side-width: (($content-width - $article-width) / 2) - $grid-gap;
+
+article {
+  display: grid;
+  grid-template-columns: 
+    [full-start] minmax(0, 1fr)
+    [content-start] minmax(0, $content-side-width)
+    [article-start] minmax(0, $article-width)
+    [article-end] minmax(0, $content-side-width)
+    [content-end] minmax(0, 1fr)
+    [full-end];
+  //padding: 1rem;
+
+  & > * {
+    grid-column: content;
+  }
+
+  & > section {
+    grid-column: article;
+  }
+}
+
+
+@media (min-width: $media-larger-than-mobile) {
+  article {
+    //padding: 2rem;
+    grid-gap: $grid-gap;
+  }
+}
+
+@media (min-width: $media-larger-than-tablet) {
+  article {
+    
+  }
+}
+
+/*
 article {
   position: relative;
   margin: 0 auto;
@@ -37,3 +87,4 @@ article {
     }
   }
 }
+*/

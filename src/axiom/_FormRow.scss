@@ -56,13 +56,16 @@ $label-min-width: 10rem;
     flex: 0;
   }
 
-  .tag {
-    display: none;
+  .tag, .ic {
     position: absolute;
     right: .6rem;
     top: .6rem;
     bottom: .6rem;
-    padding: 0.1rem 0.8rem;
+    padding: .1rem .8rem;
+  }
+
+  .tag {
+    display: none;
   }
 
   &.show-tag .tag {

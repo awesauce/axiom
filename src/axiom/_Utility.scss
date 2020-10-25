@@ -2,47 +2,37 @@
 //     /\   \ /  |  / \  |\  /|
 //    /  \  / \  |  \ /  | \/ |
 //
-// Utility
+// Utility, Hides
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
+
 .fixed {
-	position: fixed;
-	z-index: 9999;
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
 }
 
-// used with select-row and other flex rows
-.justify-end {
-	justify-content: flex-end;
-}
-.justify-center {
-	justify-content: center;
+.border-bottom {
+  border-bottom: 0.1rem solid $color-medium;
 }
 
-// Float either direction
-.float-left {
-	float: left;
-}
 
-.float-right {
-	float: right;
-}
-
-// hides
 .hide-small, .hide-small-medium {
-	display: none;
+  display: none;
 }
 
 @media (min-width: $media-larger-than-mobile) {
   .hide-small {
-		display: block;
+    display: block;
   }
 }
 
 @media (min-width: $media-larger-than-tablet) {
   .hide-small-medium {
-		display: block;
-	}
-	.hide-large {
-		display: none;
-	}
+    display: block;
+  }
+
+  .hide-large {
+    display: none;
+  }
 }

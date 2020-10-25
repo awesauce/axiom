@@ -5,27 +5,56 @@
 // Nav
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
+@keyframes border-color-primary {
+  to { border-bottom-color: $color-primary; }
+}
+@mixin ani-border-color-primary {
+  animation-name: border-color-primary;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
 nav {
-  width: 100%;
+  margin: 0 auto;
+  max-width: $content-width;
   display: flex;
-  justify-content: space-evenly;
   flex-wrap: wrap;
-  border-bottom: 0.1rem solid $color-medium;
+
+  align-items: center;
 
   color: $color-dark;
   font-family: $font-h2-stack;
   font-weight: $font-h2-weight;
   letter-spacing: $font-h2-letter-spacing;
 
-  .logo {
+
+  & > * {
+    margin-right: $grid-gap * 3;
+    border-width: .3rem 0;
+    //padding: .4rem 1rem;
+  }
+
+  &.nav-right {
+    justify-content: flex-end;
+    & > *  {
+      margin-left: $grid-gap * 3;
+      margin-right: 0;
+    }
+    .nav-logo {
+      margin-left: 0;
+      margin-right: auto;
+    }
+  }
+
+
+  .nav-logo {
     font-size: 3rem;
     color: $color-primary;
   }
 
-  & > * {
-    border: 0 solid rgba(0,0,0,0);
-    border-width: .3rem 0;
-    padding: 0 .2rem;
+  &.nav-last-right > *:last-child {
+    margin-left: auto;
+    margin-right: 0;
   }
 
   a {
@@ -37,33 +66,37 @@ nav {
       text-transform: uppercase;
     }
 
-    &.active {
-      border-bottom-color: $color-body;
-    }
-
     &:focus, &:hover {
       text-decoration: none;
-      border-bottom-color: $color-primary;
-    }
-
-    &.logo {
-      border-bottom-color: rgba(0,0,0,0);
     }
   }
 }
-
 
 @media (min-width: $media-larger-than-mobile) {
   nav {
     line-height: 5.6rem;
     font-size: 2rem;
-    .logo  {
+    align-items: initial;
+    .nav-logo  {
       font-size: 4.6rem;
     }
     & > * {
+      border: 0 solid rgba(0,0,0,0);
       border-width: .4rem 0;
-      padding: 0 .4rem;
+    }
+    a {
+      &.active {
+        border-bottom-color: $color-body;
+      }
+
+      &:focus, &:hover {
+        //border-bottom-color: $color-primary;
+        @include ani-border-color-primary;
+      }
+  
+      &.nav-logo {
+        border-bottom-color: rgba(0,0,0,0);
+      }
     }
   }
 }
-

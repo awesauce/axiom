@@ -43,6 +43,14 @@ $font-h2-letter-spacing: $font-h1-letter-spacing !default;
 $font-h2-is-uppercase: $font-h1-is-uppercase !default;
 
 
+// Other Units ---–––––––––––––––––––––––––––––––––––
+
+$grid-gap: 1rem !default;
+//$content-width: 112rem !default;
+//$article-width: 86rem !default;
+$content-width: 100rem !default;
+$article-width: 78rem !default;
+
 // Colors shades ––––––––––––––––––––––––––––––––––––
 
 $color-light: mix($color-background, $color-body, 93%) !default;

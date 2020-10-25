@@ -2,21 +2,21 @@
 //     /\   \ /  |  / \  |\  /|
 //    /  \  / \  |  \ /  | \/ |
 //
-// Code
+// Code, Pre
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
 code {
-	background: $color-light;
-	border-radius: $border-radius;
-	margin: 0 .2rem ;
-	padding: .2rem .5rem;
-	position: relative;
-	top: -.2rem;
+  background: $color-light;
+  border-radius: $border-radius;
+  margin: 0 .2rem;
+  padding: .2rem .5rem;
+  position: relative;
+  top: -.2em;
 }
 
 pre {
-	background: $color-light;
-	border-left: .3rem solid $color-primary;
-	overflow-y: hidden;
-	padding: .2rem .5rem;
+  border-left: .3rem solid $color-primary;
+  background: $color-light;
+  overflow-y: hidden;
+  padding: .3rem 1rem;
 }

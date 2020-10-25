@@ -30,10 +30,10 @@ $join: 'miter';
   height: 1.5em;
 
 
-  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center; 
-  background:red;
+  background-repeat: no-repeat !important;
+  background-position: center !important; 
+  //background:red;
 
   p > & {
     top: .35em;
@@ -42,6 +42,10 @@ $join: 'miter';
 }
 
 .ic-social {
+  width: 2em;
+  height: 2em;
+  background-size: 75%;
+
   background-color: $color-primary;
   &:hover {
     background-color: $color-dark;
