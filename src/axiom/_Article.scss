@@ -21,30 +21,50 @@ time, address {
 $content-side-width: (($content-width - $article-width) / 2) - $grid-gap;
 
 article {
-  display: grid;
-  grid-template-columns: 
-    [full-start] minmax(0, 1fr)
-    [content-start] minmax(0, $content-side-width)
-    [article-start] minmax(0, $article-width)
-    [article-end] minmax(0, $content-side-width)
-    [content-end] minmax(0, 1fr)
-    [full-end];
-  //padding: 1rem;
 
   & > * {
-    grid-column: content;
+    margin: 0;
+    padding: $grid-gap;
   }
 
-  & > section {
-    grid-column: article;
-  }
 }
 
 
 @media (min-width: $media-larger-than-mobile) {
   article {
-    //padding: 2rem;
+    display: grid;
+    grid-template-columns: 
+      [full-start] minmax(0, 1fr)
+      [content-start] minmax(0, $content-side-width)
+      [article-start] minmax(0, $article-width)
+      [article-end] minmax(0, $content-side-width)
+      [content-end] minmax(0, 1fr)
+      [full-end];
     grid-gap: $grid-gap;
+
+    & > * {
+      padding: 0;
+      grid-column: content;
+    }
+
+    & > header, & > section, & > footer {
+      grid-column: article;
+    }
+
+    aside {
+      grid-column: full;
+      & > section {
+        margin: 0 auto;
+        max-width: $article-width;
+      }
+    }
+
+    .aside-left {
+      grid-column: 2;
+    }
+    .aside-right {
+      grid-column: 4;
+    }
   }
 }
 
@@ -53,38 +73,3 @@ article {
     
   }
 }
-
-/*
-article {
-  position: relative;
-  margin: 0 auto;
-  max-width: 72rem;
-
-  figure {
-    padding: 0;
-    margin: 0 -2rem; // match section padding
-    color: $color-medium;
-
-    figcaption {
-      padding: 0 2rem;
-    }
-  }
-}
-
-@media (min-width: $media-larger-than-mobile) {
-  article {
-    figure {
-      margin: 0 -6rem; // match section padding
-    }
-  }
-}
-
-@media (min-width: $media-larger-than-tablet) {
-  article {
-    max-width: 86rem;
-    figure {
-      margin: 0 -10rem; // match section padding
-    }
-  }
-}
-*/

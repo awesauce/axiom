@@ -20,6 +20,9 @@ $iconStrokeWidth: 3;
 // Colors
 //$color-primary: #605987;
 $color-primary: #9e95d3;
+$color-contrast: #fff;
+$color-background: #fff;
+
 
 // All modules
 // @import 'axiom/axiom';
@@ -36,12 +39,12 @@ $color-primary: #9e95d3;
 @import 'axiom/Form';
 @import 'axiom/FormRow';
 @import 'axiom/Grid';
+@import 'axiom/Header';
 @import 'axiom/Icons';
 @import 'axiom/Image';
 @import 'axiom/Link';
+@import 'axiom/Main';
 @import 'axiom/Message';
-@import 'axiom/Nav';
-@import 'axiom/Section';
 @import 'axiom/Table';
 @import 'axiom/Typography';
 @import 'axiom/Utility';

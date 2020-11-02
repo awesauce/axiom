@@ -5,137 +5,64 @@
 // Button
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
-.button-row {
-  display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	margin: 0.5rem -0.5rem;
-	& > * {
-		margin: 0.5rem;
-	}
-}
+$button-spacing: 1.5rem;
 
 .button,
 button,
-[role='button'],
 input[type='button'],
 input[type='reset'],
 input[type='submit'] {
-	background-color: $color-primary;
-	border: .1rem solid $color-primary;
-	border-radius: $border-radius;
-	color: $color-light;
-	cursor: pointer;
-	display: inline-block;
-	//font-size: 1.1rem;
-	//padding: 0 3.0rem;
-	font-size: 1.3rem;
-	padding: 0 2.0rem;
-	//font-weight: $font-weight-bold;
-	height: 3.8rem;
-	letter-spacing: .1rem;
-	line-height: 3.8rem;
-	text-align: center;
-	text-decoration: none;
-	text-transform: uppercase;
-	white-space: nowrap;
+  @include button-font-style();
 
-  font-family: $font-h2-stack;
-  font-weight: $font-h2-weight;
-  letter-spacing: $font-h2-letter-spacing;
+  background-color: $color-primary;
+  color: $color-contrast;
+  border: 0;
+  border-radius: $border-radius;
+  cursor: pointer;
+  //display: inline-block;  
+  text-decoration: none;
+  white-space: nowrap;
+  padding: 1.6rem 2.4rem;
+  margin: 1rem 0;
 
-	// Needed to fix text size difference on inputs
-	//font-family: $font-stack;
-  
+  display: inline-flex;
+  align-items: center;
 
-	&:focus,
-	&:hover {
-		background-color: $color-primary-hover;
-		border-color: $color-primary-hover;
-		color: $color-light;
-		outline: 0;
-	}
-
-	&[disabled] {
-		cursor: default;
-		opacity: .5;
-
-		&:focus,
-		&:hover {
-			background-color: $color-primary;
-			border-color: $color-primary;
-		}
-	}
-
-	&.button-outline {
-		background-color: transparent;
-		color: $color-primary;
-
-		&:focus,
-		&:hover {
-			background-color: transparent;
-			border-color: $color-primary-hover;
-			color: $color-primary-hover;
-		}
-
-		&[disabled] {
-
-			&:focus,
-			&:hover {
-				border-color: inherit;
-				color: $color-primary;
-			}
-		}
-	}
-
-	&.button-clear {
-		background-color: transparent;
-		border-color: transparent;
-		color: $color-primary;
-
-		&:focus,
-		&:hover {
-			background-color: transparent;
-			border-color: transparent;
-			color: $color-primary-hover;
-		}
-
-		&[disabled] {
-
-			&:focus,
-			&:hover {
-				color: $color-primary;
-			}
-		}
+  .ic {
+    margin: 0 !important;
+    left: -.7rem;
   }
-  
-	&.button-small {
-		font-size: 1.0rem;
-		padding: 0 1.0rem;
-		height: 2.8rem;
-		line-height: 2.8rem;
-	}
 
-	&.button-large {
-		font-size: 2.4rem;
-		padding: 0 3rem;
-		letter-spacing: .24rem;
-		height: 6rem;
-		line-height: 6rem;
-		& > * {
-			padding: .6rem 1.6rem;
-			border-right: .1rem solid $color-light;
-		}
-		*:first-child {
-			margin-left: -2rem;
-		}
-		*:last-child {
-			border-right: 0;
-			margin-right: -2rem;
-		}
-		.button-sub {
-			font-weight: $font-weight-regular;
-		}
-	}
+  transition: box-shadow $animation-speed ease-out;
+
+  &:focus,
+  &:hover {
+    color: $color-contrast;
+    text-decoration: none;
+    //background-color: $color-primary-hover;
+    outline: 0;
+
+    box-shadow: 0 0 0 .15em $color-contrast,
+                0 0 0 .3em $color-primary;
+
+  }
+
+  &[disabled] {
+    cursor: default;
+    opacity: .5;
+
+    &:hover {
+      box-shadow: none;
+    }
+  }
+
+  &.button-contrast {
+    background-color: $color-contrast;
+    color: $color-primary;
+    &:focus, &:hover {
+      box-shadow: 0 0 0 .15em $color-primary,
+                  0 0 0 .3em $color-contrast;
+    }
+  }
 
 }

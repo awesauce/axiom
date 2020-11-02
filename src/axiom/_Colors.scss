@@ -17,7 +17,8 @@
 }
 
 @include color("page", $color-background, $color-body);
-@include color("primary", $color-primary, $color-background);
+@include color("primary", $color-primary, $color-contrast);
+@include color("contrast", $color-contrast, $color-primary);
 @include color("light", $color-light, $color-body);
 @include color("medium", $color-medium, $color-body);
 @include color("dark", $color-dark, $color-light);

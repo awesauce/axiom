@@ -6,16 +6,15 @@
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
 
-.fixed {
-  position: fixed;
-  z-index: 9999;
-  width: 100%;
+// some text utility classes
+
+.center-text {
+  text-align: center;
 }
 
-.border-bottom {
-  border-bottom: 0.1rem solid $color-medium;
+.justify-text {
+  text-align: justify;
 }
-
 
 .hide-small, .hide-small-medium {
   display: none;

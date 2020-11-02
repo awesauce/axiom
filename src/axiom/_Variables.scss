@@ -16,6 +16,7 @@ $media-larger-than-tablet: 60.0em !default;
 
 // The branded color
 $color-primary: #9e95d3 !default;
+$color-contrast: #fff !default;
 
 // Base colors
 $color-background: #fff !default;
@@ -35,12 +36,16 @@ $font-letter-spacing: .01em !default;
 $font-h1-stack: 'Roboto Condensed', 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
 $font-h1-weight: 500 !default;
 $font-h1-letter-spacing: .02em !default;
-$font-h1-is-uppercase: true;
+$font-h1-is-uppercase: true !default;
+$font-h1-size-mobile: 5rem !default;
+$font-h1-size-larger: 7rem !default;
 
 $font-h2-stack: $font-h1-stack !default;
 $font-h2-weight: 300 !default;
 $font-h2-letter-spacing: $font-h1-letter-spacing !default;
 $font-h2-is-uppercase: $font-h1-is-uppercase !default;
+$font-h2-size-mobile: 3.6rem !default;
+$font-h2-size-larger: 4.6rem !default;
 
 
 // Other Units ---–––––––––––––––––––––––––––––––––––
@@ -50,6 +55,7 @@ $grid-gap: 1rem !default;
 //$article-width: 86rem !default;
 $content-width: 100rem !default;
 $article-width: 78rem !default;
+$animation-speed: 150ms !default;
 
 // Colors shades ––––––––––––––––––––––––––––––––––––
 
@@ -71,5 +77,54 @@ $color-primary-hover: hover-color($color-primary) !default;
     @if $border-radius != 0 {
       border-radius: $border-radius;
     }
+  }
+}
+
+@mixin h1-font-style {
+  font-size: $font-h1-size-mobile;
+  line-height: 1.2;
+  @if ($font-h1-stack != $font-stack) {
+    font-family: $font-h1-stack;
+  }
+  font-weight: $font-h1-weight;
+  letter-spacing: $font-h1-letter-spacing;
+  @if $font-h1-is-uppercase {
+    text-transform: uppercase;
+  }
+  @media (min-width: $media-larger-than-mobile) {
+    & {
+      font-size: $font-h1-size-larger;
+    }
+  }
+}
+
+@mixin h2-font-style {
+  font-size: $font-h2-size-mobile;
+  line-height: 1.25;
+  @if ($font-h2-stack != $font-stack) {
+    font-family: $font-h2-stack;
+  }
+  font-weight: $font-h2-weight;
+  letter-spacing: $font-h2-letter-spacing;
+  @if $font-h2-is-uppercase {
+    text-transform: uppercase;
+  }
+  @media (min-width: $media-larger-than-mobile) {
+    & {
+      font-size: $font-h2-size-larger;
+    }
+  }
+}
+
+@mixin button-font-style {
+  //line-height: 1;
+  font-size: 2.2rem;
+  @if ($font-h2-stack != $font-stack) {
+    font-family: $font-h2-stack;
+  }
+  font-weight: $font-h2-weight;
+  letter-spacing: $font-h2-letter-spacing;
+  @if $font-h2-is-uppercase {
+    text-transform: uppercase;
   }
 }

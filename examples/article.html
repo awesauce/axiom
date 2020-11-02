@@ -20,37 +20,42 @@
 
 <body>
 
-  <header class="border-bottom fixed">
-    <nav class="nav-last-right bg-light">
-      <a href="index.html" class="nav-logo">AXIOM</a>
+  <header>
+    <a href="index.html">
+      AXIOM
+    </a>
+    <nav>
       <a href="product.html">Product</a>
-      <a href="blog.html">Blog <span class="tag">4</span></a>
+      <a href="blog.html">Blog</a>
       <a href="article.html" class="active">Article</a>
-      <span class="form-row">
-        <input type="text" name="search" id="search" />
-        <i class="ic icon-search"></i>
-      </span>
+      <a href="form.html">Form</a>
     </nav>
   </header>
 
-  <article>
+  <article class="below-header">
+
     <header>
       <h1>What Is In A Title?</h1>
+      <p>A sub-title added to the title beneath it.</p>
 
-      <a href="facebook.com"><i class="ic ic-social icon-facebook"></i></a>
-      <a href="instagram.com"><i class="ic ic-social icon-instagram"></i></a>
-      <a href="linkedin.com"><i class="ic ic-social icon-linkedin"></i></a>
-      <a href="reddit.com"><i class="ic ic-social icon-reddit"></i></a>
-      <a href="twitter.com"><i class="ic ic-social icon-twitter"></i></a>
-      <a href="youtube.com"><i class="ic ic-social icon-youtube"></i></a>
-      <a href="mailto:email"><i class="ic ic-social icon-mail"></i></a>
-
-      <time datetime="2020-10-14 20:00">OCT 14 2020</time>
+      BY
       <address><a rel="author" href="/author/john-doe">John Doe</a></address> 
+      <time datetime="2020-10-14 20:00">OCT 14 2020</time>
     </header>
 
+    <aside class="aside-left">
+      <p>
+        <a href="facebook.com"><i class="ic ic-social icon-facebook"></i></a>
+        <a href="instagram.com"><i class="ic ic-social icon-instagram"></i></a>
+        <a href="linkedin.com"><i class="ic ic-social icon-linkedin"></i></a>
+        <a href="reddit.com"><i class="ic ic-social icon-reddit"></i></a>
+        <a href="twitter.com"><i class="ic ic-social icon-twitter"></i></a>
+        <a href="youtube.com"><i class="ic ic-social icon-youtube"></i></a>
+        <a href="mailto:email"><i class="ic ic-social icon-mail"></i></a>
+      </p>
+    </aside>
+
     <section>
-      <h2>A Secondary Header</h2>
       <p>An even longer tag-line is also an otion luctus suscipit <span class="tag">mattis viverra</span> porta lacinia, consequat morbi.
         Adipiscing nullam auctor imperdiet vitae arcu bibendum rutrum lacinia augue sed.</p>
       <p>
@@ -105,43 +110,43 @@
 
     <aside class="bg-light">
       <section>
-      <h2>Seperate Section</h2>
-      <p>
-        Nisi iaculis eleifend class suscipit quam. Netus felis commodo ad bibendum est ante sit morbi, non cubilia.
-        Morbicommodo ridiculus cras, potenti eget amet hendrerit.
-      </p>
+        <h2>Seperate Section</h2>
+        <p>
+          Nisi iaculis eleifend class suscipit quam. Netus felis commodo ad bibendum est ante sit morbi, non cubilia.
+          Morbicommodo ridiculus cras, potenti eget amet hendrerit.
+        </p>
 
-      <table>
-        <thead>
-          <tr>
-            <th>Title</th>
-            <th>Director</th>
-            <th>Year</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Bladerunner</td>
-            <td>Ridley Scott</td>
-            <td>1982</td>
-          </tr>
-          <tr>
-            <td>Eternal Sunshine of the Spotless Mind</td>
-            <td>Michel Gondry</td>
-            <td>2004</td>
-          </tr>
-          <tr>
-            <td>The Shawshank Redemption</td>
-            <td>Frank Darabont</td>
-            <td>1994</td>
-          </tr>
-          <tr>
-            <td>Rashamon (羅生門)</td>
-            <td>Akira Kurosawa</td>
-            <td>1950</td>
-          </tr>
-        </tbody>
-      </table>
+        <table>
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Director</th>
+              <th>Year</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Bladerunner</td>
+              <td>Ridley Scott</td>
+              <td>1982</td>
+            </tr>
+            <tr>
+              <td>Eternal Sunshine of the Spotless Mind</td>
+              <td>Michel Gondry</td>
+              <td>2004</td>
+            </tr>
+            <tr>
+              <td>The Shawshank Redemption</td>
+              <td>Frank Darabont</td>
+              <td>1994</td>
+            </tr>
+            <tr>
+              <td>Rashamon (羅生門)</td>
+              <td>Akira Kurosawa</td>
+              <td>1950</td>
+            </tr>
+          </tbody>
+        </table>
       </section>
     </aside>
 
@@ -206,23 +211,24 @@ int randomInt(long *seed, int max) {
 }</pre>
 
       <h2>Blockquote</h2>
-      <blockquote>
-        <p>
+      <p>
+        <blockquote>
           Blockquote eros magna dictumst curabitur mattis cum? Tellus dapibus, euismod felis sed consequat nullam? Ipsum fusce leo ut
           consectetur, placerat montes. Ullamcorper morbi fringilla torquent porttitor leo odio libero penatibus.
           Scelerisque amet placerat nibh placerat est sed fermentum. Sagittis rhoncus venenatis nisi nostra felis mollis
           euismod condimentum netus eleifend non. Auctor taciti himenaeos potenti, molestie vivamus. Et iaculis quam
           molestie. Augue justo, gravida parturient congue. Platea pellentesque ridiculus ut scelerisque sagittis, libero
           sociis dapibus malesuada.
-        </p>
-      </blockquote>
+        </blockquote>
+      </p>
+
 
     </section>
   </article>
 
-  <section class="bg-primary">
-    <div>
-      <h2>Seperate Section</h2>
+  <article class="bg-primary">
+    <section>
+      <h2>Seperate Article</h2>
       <p>
         Nisi iaculis eleifend class suscipit quam. Netus felis commodo ad bibendum est ante sit morbi, non cubilia.
         Morbi
@@ -231,46 +237,45 @@ int randomInt(long *seed, int max) {
         morbi. Adipiscing nullam auctor imperdiet vitae arcu bibendum rutrum lacinia augue sed. Vivamus magnis lacinia
         quam turpis venenatis integer erat cras vel accumsan. Lorem egestas lorem ante, nascetur nunc.
       </p>
-    </div>
-  </section>
+    </section>
+  </article>
   
   <footer class="bg-dark">
-    <ul>
-      Header
-      <li><a href="#">Link A</a></li>
-      <li><a href="#">Another Link</a></li>
-      <li><a href="#">Link To C</a></li>
-      <li><a href="#">Fourth Link</a></li>
-      <li><a href="#">Link of D</a></li>
-      <li><a href="#">Last One</a></li>
-    </ul>
+    <section>
+      <ul>
+        Header
+        <li><a href="#">Link A</a></li>
+        <li><a href="#">Another Link</a></li>
+        <li><a href="#">Link To C</a></li>
+        <li><a href="#">Fourth Link</a></li>
+        <li><a href="#">Link of D</a></li>
+        <li><a href="#">Last One</a></li>
+      </ul>
+  
+      <ul>
+        Header
+        <li><a href="#">Link A</a></li>
+        <li><a href="#">Another Link</a></li>
+        <li><a href="#">Link To C</a></li>
+        <li><a href="#">Fourth Link</a></li>
+      </ul>
+  
+      <p>
+        <a href="facebook.com"><i class="ic ic-social icon-facebook"></i></a>
+        <a href="instagram.com"><i class="ic ic-social icon-instagram"></i></a>
+        <a href="linkedin.com"><i class="ic ic-social icon-linkedin"></i></a>
+        <a href="reddit.com"><i class="ic ic-social icon-reddit"></i></a>
+        <a href="twitter.com"><i class="ic ic-social icon-twitter"></i></a>
+        <a href="youtube.com"><i class="ic ic-social icon-youtube"></i></a>
+        <a href="mailto:email"><i class="ic ic-social icon-mail"></i></a>
+      </p>
+  
+      <span>
+        Copyright &copy; 2020 AXIOM. All rights reserved. Use of this site constitutes acceptance of our <a href="#">User
+          Agreement</a> and <a href="#">Privacy Policy and Cookie Statement</a>.
+      </span>
 
-    <ul>
-      Header
-      <li><a href="#">Link A</a></li>
-      <li><a href="#">Another Link</a></li>
-      <li><a href="#">Link To C</a></li>
-    </ul>
-
-    <ul>
-      Header
-      <li><a href="#">Link A</a></li>
-      <li><a href="#">Another Link</a></li>
-      <li><a href="#">Link To C</a></li>
-      <li><a href="#">Fourth Link</a></li>
-    </ul>
-
-    <ul>
-      Header
-      <li><a href="#">Link A</a></li>
-      <li><a href="#">Another Link</a></li>
-      <li><a href="#">Link To C</a></li>
-    </ul>
-
-    <span>
-      Copyright &copy; 2020 AXIOM. All rights reserved. Use of this site constitutes acceptance of our <a href="#">User
-        Agreement</a> and <a href="#">Privacy Policy and Cookie Statement</a>.
-    </span>
+    </section>
   </footer>
 
 

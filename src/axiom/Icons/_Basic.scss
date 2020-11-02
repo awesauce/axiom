@@ -16,7 +16,7 @@
 }
 
 .icon-heart {
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path fill="#{url-col($color-background)}" stroke="#{url-col($color-body)}" stroke-width="#{$iconStrokeWidth}" stroke-linejoin="#{$join}" d="M32,52c10.6-6.6,26.8-23.4,18.5-34C42.1,7.3,32,20,32,20S21.9,7.3,13.5,18C5.2,28.6,21.4,45.4,32,52z"/></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path fill="#{url-col($color-contrast)}" stroke="#{url-col($color-body)}" stroke-width="#{$iconStrokeWidth}" stroke-linejoin="#{$join}" d="M32,52c10.6-6.6,26.8-23.4,18.5-34C42.1,7.3,32,20,32,20S21.9,7.3,13.5,18C5.2,28.6,21.4,45.4,32,52z"/></svg>');
   &.ic-on {
     background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path fill="#{url-col($color-primary)}" stroke="#{url-col($color-body)}" stroke-width="#{$iconStrokeWidth}" stroke-linejoin="#{$join}" d="M32,52c10.6-6.6,26.8-23.4,18.5-34C42.1,7.3,32,20,32,20S21.9,7.3,13.5,18C5.2,28.6,21.4,45.4,32,52z"/></svg>');
   }
@@ -27,7 +27,7 @@
 }
 
 .icon-mail {
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><g stroke="#{url-col($color-body)}" stroke-width="#{$iconStrokeWidth}" stroke-linejoin="#{$join}"><rect fill="#{url-col($color-primary)}" x="11" y="18" width="42" height="28"/><polygon fill="#{url-col($color-background)}" points="53,18 11,18 32,35.5 "/></g></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><g stroke="#{url-col($color-body)}" stroke-width="#{$iconStrokeWidth}" stroke-linejoin="#{$join}"><rect fill="#{url-col($color-primary)}" x="11" y="18" width="42" height="28"/><polygon fill="#{url-col($color-contrast)}" points="53,18 11,18 32,35.5 "/></g></svg>');
 }
 
 .icon-menu {
@@ -43,7 +43,7 @@
 }
 
 .icon-star {
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><polygon fill="#{url-col($color-background)}" stroke="#{url-col($color-body)}" stroke-width="#{$iconStrokeWidth}" stroke-linejoin="#{$join}" points="32,8 37.9,23.9 54.8,24.6 41.5,35.1 46.1,51.4 32,42 17.9,51.4 22.5,35.1 9.2,24.6 26.1,23.9 "/></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><polygon fill="#{url-col($color-contrast)}" stroke="#{url-col($color-body)}" stroke-width="#{$iconStrokeWidth}" stroke-linejoin="#{$join}" points="32,8 37.9,23.9 54.8,24.6 41.5,35.1 46.1,51.4 32,42 17.9,51.4 22.5,35.1 9.2,24.6 26.1,23.9 "/></svg>');
   &.ic-half {
     background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><polygon fill="#{url-col($color-primary)}" points="32,8 32,42 17.9,51.4 22.5,35.1 9.2,24.6 26.1,23.9 "/><polygon fill="none" stroke="#{url-col($color-body)}" stroke-width="#{$iconStrokeWidth}" stroke-linejoin="#{$join}" points="32,8 37.9,23.9 54.8,24.6 41.5,35.1 46.1,51.4 32,42 17.9,51.4 22.5,35.1 9.2,24.6 26.1,23.9 "/></svg>');
   }

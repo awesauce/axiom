@@ -7,15 +7,21 @@
 
 footer {
   width: 100%;
-  display: flex;
-  align-items: stretch;
   font-size: 1.5rem;
-  flex-wrap: wrap;
-  margin: 0;
 
-  & > ul {
-    flex: 1 0 auto;
-    padding: 0;
-    list-style: none;
+  & > * {
+    margin: 0 auto;
+    max-width: $grid-gap + $content-width + $grid-gap;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+
+    & > ul {
+      flex: 1 0 auto;
+      padding: 0;
+      list-style: none;
+    }
   }
 }
