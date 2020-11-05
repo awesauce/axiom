@@ -40,3 +40,9 @@ body {
   background: $color-primary;
   color: $color-background;
 }
+
+hr {
+  border: 0;
+  border-top: .2rem solid $color-light;
+  margin: 2.0rem 0;
+}

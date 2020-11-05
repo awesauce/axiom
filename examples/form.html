@@ -43,9 +43,9 @@
     </header>
   </section>
 
-  <div class="grid">
-    <article>
+  <main>
 
+    <section class="main-left focus-within">
       <form action=''>
         <p>
           <label for="email">E-mail</label>
@@ -55,6 +55,10 @@
           <label for="password">Password</label>
           <input type="password" name="password" autocomplete="current-password" />
         </p>
+        <div class="switch-row">
+          <input type="checkbox" id="stay" name="stay" checked />
+          <label for="stay">Stay signed in</label>
+        </div>
         <p>
           <input type="submit" name="submit" value="Sign In" class="width-100" />
         </p>
@@ -64,9 +68,9 @@
       <a href="signup" class="button button-large width-100">
         <span>Sign Up</span><span class="button-sub">BETA</span>
       </a>
-    </article>
+    </section>
 
-    <article>
+    <section class="main-right focus-within">
       <form action=''>
         <hr/>
 
@@ -94,6 +98,36 @@
           <div class="tag">A tag message</div>
         </div>
 
+        <div class="select-row">
+          <legend>Choose your favorite monster</legend>
+          <input type="radio" id="kraken" name="monster">
+          <label for="kraken">Kraken</label>
+          <input type="radio" id="sasquatch" name="monster">
+          <label for="sasquatch">Sasquatch</label>
+          <input type="radio" id="mothman" name="monster">
+          <label for="mothman">Mothman</label>
+        </div>
+
+        <div class="select-row">
+          <legend>Select all that apply</legend>
+          <input type="checkbox" id="apple" name="fruit">
+          <label for="apple">Apple</label>
+          <input type="checkbox" id="banana" name="fruit">
+          <label for="banana">Banana</label>
+          <input type="checkbox" id="orange" name="fruit">
+          <label for="orange">Orange</label>
+        </div>
+
+        <div class="form-row">
+          <label for="cars">Choose a car:</label>
+          <select name="cars" id="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="opel">Opel</option>
+            <option value="audi">Audi</option>
+          </select>
+        </div>
+
         <hr/>
 
         <div class="message">Login or password is wrong. Try again.</div>
@@ -104,8 +138,8 @@
       </form>
 
 
-    </article>
-  </div>
+    </section>
+  </main>
 
   <section class="bg-primary">
     <div>

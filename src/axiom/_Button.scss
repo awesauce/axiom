@@ -5,7 +5,15 @@
 // Button
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
-$button-spacing: 1.5rem;
+.button-row {
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  padding: -.5rem;
+  & > * {
+    margin: .5rem;
+  }
+}
 
 .button,
 button,
@@ -19,32 +27,22 @@ input[type='submit'] {
   border: 0;
   border-radius: $border-radius;
   cursor: pointer;
-  //display: inline-block;  
   text-decoration: none;
   white-space: nowrap;
-  padding: 1.6rem 2.4rem;
-  margin: 1rem 0;
-
+  padding: 1.4rem 1.7rem;
+  min-height: 6.6rem;
+  
   display: inline-flex;
   align-items: center;
+  justify-content: center;
 
-  .ic {
-    margin: 0 !important;
-    left: -.7rem;
-  }
-
-  transition: box-shadow $animation-speed ease-out;
+  @include animated-border-hover($color-primary, $color-contrast, .3em);
 
   &:focus,
   &:hover {
     color: $color-contrast;
     text-decoration: none;
-    //background-color: $color-primary-hover;
     outline: 0;
-
-    box-shadow: 0 0 0 .15em $color-contrast,
-                0 0 0 .3em $color-primary;
-
   }
 
   &[disabled] {
@@ -59,10 +57,7 @@ input[type='submit'] {
   &.button-contrast {
     background-color: $color-contrast;
     color: $color-primary;
-    &:focus, &:hover {
-      box-shadow: 0 0 0 .15em $color-primary,
-                  0 0 0 .3em $color-contrast;
-    }
+    @include animated-border-hover($color-contrast, $color-primary, .3em);
   }
 
 }

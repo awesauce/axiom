@@ -117,8 +117,8 @@ $color-primary-hover: hover-color($color-primary) !default;
 }
 
 @mixin button-font-style {
-  //line-height: 1;
   font-size: 2.2rem;
+  //line-height: 1.25;
   @if ($font-h2-stack != $font-stack) {
     font-family: $font-h2-stack;
   }
@@ -126,5 +126,14 @@ $color-primary-hover: hover-color($color-primary) !default;
   letter-spacing: $font-h2-letter-spacing;
   @if $font-h2-is-uppercase {
     text-transform: uppercase;
+  }
+}
+
+@mixin animated-border-hover($color, $bgcolor, $width: .2rem) {
+  $half: $width / 2;
+  transition: box-shadow $animation-speed ease-out;
+  &:focus, &:hover, &:active, &:focus-within {
+    box-shadow: 0 0 0 $half  $bgcolor,
+                0 0 0 $width $color;
   }
 }

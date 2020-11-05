@@ -169,6 +169,7 @@ $label-min-width: 10rem;
       text-align: left;
       border: 0.1rem solid $color-primary;
       color: $color-primary;
+
     }
   }
 
@@ -225,6 +226,8 @@ $label-min-width: 10rem;
     padding: .2rem .6rem;
     border-radius: .4rem;
     text-align: center;
+
+    @include animated-border-hover($color-primary, $color-contrast, .2rem);
   }
   input:checked + label {
     border: 0.1rem solid $color-primary;
