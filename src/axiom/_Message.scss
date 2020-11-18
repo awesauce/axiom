@@ -12,13 +12,13 @@
   color: $color-red;
   border: 0.1rem solid $color-red;
   border-left: 1.2rem solid $color-red;
-  border-radius: 0.3rem;
+  border-radius: $border-radius;
 }
 
 .tag {
   background-color: $color-body;
   color: $color-background !important;
-  border-radius: 0.3rem;
+  border-radius: $border-radius * .75;
   padding: 0.1rem 0.4rem;
   font-size: 1.5rem;
   position: relative;

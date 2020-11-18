@@ -50,7 +50,7 @@ $font-h2-size-larger: 4.6rem !default;
 
 // Other Units ---–––––––––––––––––––––––––––––––––––
 
-$grid-gap: 1rem !default;
+$grid-gap: 3rem !default;
 //$content-width: 112rem !default;
 //$article-width: 86rem !default;
 $content-width: 100rem !default;
@@ -132,7 +132,7 @@ $color-primary-hover: hover-color($color-primary) !default;
 @mixin animated-border-hover($color, $bgcolor, $width: .2rem) {
   $half: $width / 2;
   transition: box-shadow $animation-speed ease-out;
-  &:focus, &:hover, &:active, &:focus-within {
+  &:focus, &:hover, &:active {
     box-shadow: 0 0 0 $half  $bgcolor,
                 0 0 0 $width $color;
   }
