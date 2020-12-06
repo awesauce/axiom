@@ -14,10 +14,13 @@ $content-third-width-halved: ($content-third-width - $grid-gap) / 2;
     display: grid;
     grid-gap: $grid-gap;
 
+    grid-template-columns: 
+      [content-start left-start] 1fr
+      [left-end right-start] 1fr
+      [right-end content-end];
+
+
     &.grid-content {
-      max-width: $content-width;
-      margin-left: auto;
-      margin-right: auto;
       grid-template-columns: 
         [content-start left-start] minmax(0, $content-half-width)
         [left-end right-start] minmax(0, $content-half-width)
@@ -39,7 +42,7 @@ $content-third-width-halved: ($content-third-width - $grid-gap) / 2;
         [full-left-end left-end full-right-start right-start] minmax(0, $content-half-width)
         [content-end right-end] minmax(0, 1fr)
         [full-end full-right-end];
-      
+
       &.grid-thirds {
         grid-template-columns: 
           [full-start full-left-start] minmax(0, 1fr)
@@ -56,32 +59,41 @@ $content-third-width-halved: ($content-third-width - $grid-gap) / 2;
       grid-column: content;
     }
 
-    & > .item-full {
-      grid-column: full;
-    }
-    & > .item-full-left {
-      grid-column: full-left;
-    }
-    & > .item-full-right {
-      grid-column: full-right;
-    }
-
-    & > .item-content-left {
+    & > .item-left {
       grid-column: left;
     }
-    & > .item-content-right {
+    & > .item-right {
       grid-column: right;
     }
 
-    & > .item-third-a {
-      grid-column: third-a;
+    & > .item-span-2 {
+      grid-column-end: span 2;
     }
-    & > .item-third-b {
-      grid-column: third-b;
+    & > .item-span-3 {
+      grid-column-end: span 3;
     }
-    & > .item-third-c {
-      grid-column: third-c;
-    }
+  }
+}
 
+@media (min-width: $media-larger-than-tablet) {
+  .grid {
+    &.grid-three {
+      grid-template-columns: 
+        [content-start left-start] 1fr
+        [left-end center-start] 1fr
+        [center-end right-start] 1fr
+        [right-end content-end];
+
+      & > .item-center {
+        grid-column: center;
+      }
+      & > .item-center-left {
+        grid-column: left / center;
+      }
+      & > .item-center-right {
+        grid-column: center / right;
+      }
+
+    }
   }
 }

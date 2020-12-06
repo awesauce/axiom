@@ -27,6 +27,10 @@ article {
     padding: $grid-gap;
   }
 
+  p, h1, h2, table {
+    margin: 2rem 0;
+  }
+
 }
 
 

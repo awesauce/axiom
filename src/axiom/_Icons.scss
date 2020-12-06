@@ -24,7 +24,7 @@ $join: 'miter';
   display: inline-block;
   border-radius: 16%;
   //border-radius: $border-radius;
-  //position: relative;
+  position: relative;
 
   width: 1.5em;
   height: 1.5em;
@@ -35,7 +35,7 @@ $join: 'miter';
   background-position: center !important; 
   //background:red;
 
-  p > & {
+  p & {
     top: .35em;
     margin-top: -.35em;
   }

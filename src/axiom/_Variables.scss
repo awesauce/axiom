@@ -7,6 +7,9 @@
 
 $border-radius: .4rem !default;
 
+$isIconRounded: true !default;
+$iconStrokeWidth: 3 !default;
+
 // Variables for the media breakpoints
 // em because rem breakpoints don't work on Safari
 $media-larger-than-mobile: 40.0em !default;
@@ -133,6 +136,7 @@ $color-primary-hover: hover-color($color-primary) !default;
   $half: $width / 2;
   transition: box-shadow $animation-speed ease-out;
   &:focus, &:hover, &:active {
+    outline: 0;
     box-shadow: 0 0 0 $half  $bgcolor,
                 0 0 0 $width $color;
   }

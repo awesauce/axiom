@@ -15,4 +15,22 @@ a {
 		text-decoration: underline;
 		color: $color-primary-hover;
   }
+
+  &.tile {
+    display: block;
+    @include animated-border-hover($color-primary, $color-contrast, .3em);
+    font-weight: $font-weight-regular;
+    background-color: $color-light;
+    color: $color-body;
+
+    & > div {
+      padding: $grid-gap / 2;
+    }
+
+    &:focus,
+    &:hover {
+      text-decoration: none;
+      color: $color-body;
+    }
+  }
 }
