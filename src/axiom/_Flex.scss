@@ -1,0 +1,33 @@
+//
+//     /\   \ /  |  / \  |\  /|
+//    /  \  / \  |  \ /  | \/ |
+//
+// Responsive Flex
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+.responsive-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  & > * {
+    flex: 1 1 auto;
+  }
+}
+
+@media (min-width: $media-larger-than-mobile) {
+  .responsive-flex {
+    flex-direction: row;
+  }
+}
+
+// Functional flex classes
+
+.justify-content-space-between {
+  justify-content: space-between;
+}
+.justify-content-space-around {
+  justify-content: space-around;
+}
+.justify-content-space-evenly {
+  justify-content: space-evenly;
+}

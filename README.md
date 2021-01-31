@@ -1,7 +1,7 @@
 
 <img alt="AXIOM" src="/icons/axiom.svg" width="256">
 
-# A X I O M
+# AXIOM CSS
 
 ### This is the first commit. Not all here yet. Work in progress.
 

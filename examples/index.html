@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>A X I O M</title>
+  <title>AXIOM CSS</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="icon" type="image/png" href="favicon-16.png" sizes="16x16">
@@ -12,83 +12,107 @@
   <link rel="icon" type="image/png" href="favicon-512.png" sizes="512x512">
 
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700" rel="stylesheet">
 
   <link href="../dist/axiom.css" rel="stylesheet" type="text/css" />
-
 </head>
 
 <body>
 
-  <header>
-    <a href="index.html">
-      <img class="header-logo" src="axiom-logotype.svg" />
-    </a>
+  <header class="background-primary">
     <nav>
-      <a href="product.html" class="active">Home</a>
-      <a href="product.html">Product</a>
-      <a href="blog.html">Blog</a>
+      <h1>
+        <a href="index.html"><i class="ic icon-axiom"></i></a>
+        <a href="index.html" class="font-regular hide-small">
+          &nbsp;
+          <b>AXIOM</b><span class="font-weight-thin">CSS</span>
+        </a>
+      </h1>
+      <a href="class.html">Class</a>
       <a href="article.html">Article</a>
-      <a href="form.html">Form</a>
+      <a href="forms.html">Forms</a>
+      <a href="icons.html">Icons</a>
+      <a href="use.html" class="button">Use</a>
     </nav>
   </header>
-  <div class="below-header"></div>
+  <div class="padding-top-header-height"></div>
 
-  <main class="bg-primary">
+  <section class="background-primary">
+    <div class="content responsive-flex">
+      <div class="text-align-center">
+        <i class="ic ic-large icon-axiom background-body"></i>
+      </div>
+      <div class="text-align-center">
+        <h1 class="font-regular"><b>AXIOM</b><span class="font-weight-thin">CSS</span></h1>
+        <p>A light SCSS and Icon Framework</p>
+      </div>
+    </div>
+  </section>
 
-    <section class="main-left main-height">
-      <i class="ic ic-home icon-axiom bg-light"></i>
-    </section>
+  <section class="background-yellow">
+    <div class="grid grid-3">
+      <div class="text-align-center">
+        <i class="ic ic-medium icon-mobile"></i>
+        <h2>Responsive</h2>
+        <p>Designed mobile first.</p>
+      </div>
+  
+      <div class="text-align-center">
+        <i class="ic ic-medium icon-star"></i>
+        <h2>Semantic</h2>
+        <p>Built for modern markup...</p>
+      </div>
+  
+      <div class="text-align-center">
+        <i class="ic ic-medium icon-chat"></i>
+        <h2>Functional</h2>
+        <p>...with utility and expandibility.</p>
+      </div>
+    </div>
+  </section>
 
-    <section class="main-right main-height bg-light">
-      <header class="center-text">
-        <h1>AXIOM</h1>
-        <h2>A sub-title lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-        <p>An even <i class="ic icon-axiom"></i> longer tag-line is also an otion luctus suscipit mattis viverra porta lacinia, consequat morbi.
-          Adipiscing nullam <i class="ic icon-close"></i> auctor imperdiet vitae <i class="ic icon-heart"></i> arcu bibendum rutrum lacinia augue sed.</p>
-        <a class="button button-contrast">Call To Action</a>
-      </header>
-    </section>
+  <section class="background-teal">
+    <div class="grid grid-3">
+      <div class="text-align-center">
+        <i class="ic ic-medium icon-cart"></i>
+        <h2>Optimility</h2>
+        <p>Balances small, pro, and SEO.</p>
+      </div>
+  
+      <div class="text-align-center">
+        <i class="ic ic-medium icon-eye ic-on"></i>
+        <h2>Beauty</h2>
+        <p>Clean, colorful, contemporary design.</p>
+      </div>
+  
+      <div class="text-align-center">
+        <i class="ic ic-medium icon-a11y"></i>
+        <h2>Accessibility</h2>
+        <p>Designed for professional standards.</p>
+      </div>
+    </div>
+  </section>
 
-    <figure>
-      
-    </figure>
-    <figcaption>Figure 2. Something to think about.</figcaption>
-
-    <figure class="main-left">
-      
-    </figure>
-    <figcaption>Figure 2. Something to think about.</figcaption>
-
-  </main>
-
-
-  <main>
-    <section class="main-full">
-      <i class="ic icon-close"></i>
-      <i class="ic icon-heart ic-on"></i>
-      <i class="ic icon-heart ic-on"></i>
-      <i class="ic icon-heart ic-on"></i>
-      <i class="ic icon-heart"></i>
-    </section>
-  </main>
-
-
-  <main class="content grid grid-three">
-    <a class="tile item-span-2" href="article.html">
+  <section class="grid grid-3">
+    <a class="tile grid-column-span-2" href="article.html">
+      <div class="responsive-flex background-yellow">
+        <i class="ic ic-medium icon-chat"></i>
+        <i class="ic ic-medium icon-phone hide-small"></i>
+        <i class="ic ic-medium icon-star ic-half hide-small"></i>
+      </div>
       <div>
-        <h2>What Is In A Title?</h2>
+        <h2>ICONS</h2>
         <p>
           A is also an otion luctus suscipit mattis viverra porta lacinia, consequat morbi.
           Adipiscing nullam auctor imperdiet vitae arcu bibendum.
         </p>
         <p>
-          Read more <i class="ic icon-chevron"></i>
+          Read more <i class="ic icon-arrow"></i>
         </p>
       </div>
     </a>
     <a class="tile" href="article.html">
-      <img src="http://placeimg.com/1280/720/arch">
+      <div class="background-purple"></div>
       <div>
         <h2>What Is In A Title?</h2>
         <p>An even longer tag-line is also an otion luctus suscipit.</p>
@@ -96,35 +120,39 @@
     </a>
 
     <a class="tile" href="article.html">
+      <div class="background-red"></div>
       <div>
         <h2>What Is In A Title?</h2>
         <p>An even longer tag-line is also an otion luctus suscipit.</p>
       </div>
     </a>
     <a class="tile" href="article.html">
+      <div class="background-green"></div>
       <div>
         <h2>What Is In A Title?</h2>
         <p>An even longer tag-line is also an otion luctus suscipit.</p>
       </div>
     </a>
     <a class="tile" href="article.html">
+      <div class="background-blue"></div>
       <div>
         <h2>What Is In A Title?</h2>
         <p>An even longer tag-line is also an otion luctus suscipit.</p>
       </div>
     </a>
 
-    <a class="tile item-span-3" href="article.html">
+    <a class="tile grid-column-span-3" href="article.html">
+      <div class="background-orange"></div>
       <div>
         <h2>What Is In A Title?</h2>
         <p>An even longer tag-line is also an otion luctus suscipit.</p>
       </div>
     </a>
-  </main>
+  </section>
 
 
   <footer class="bg-dark">
-    <section>
+    <div class="grid">
       <ul>
         Header
         <li><a href="#">Link A</a></li>
@@ -144,21 +172,22 @@
       </ul>
   
       <p>
-        <a href="facebook.com"><i class="ic ic-social icon-facebook"></i></a>
-        <a href="instagram.com"><i class="ic ic-social icon-instagram"></i></a>
-        <a href="linkedin.com"><i class="ic ic-social icon-linkedin"></i></a>
-        <a href="reddit.com"><i class="ic ic-social icon-reddit"></i></a>
-        <a href="twitter.com"><i class="ic ic-social icon-twitter"></i></a>
-        <a href="youtube.com"><i class="ic ic-social icon-youtube"></i></a>
+        <a href="http://facebook.com"><i class="ic ic-social icon-facebook"></i></a>
+        <a href="http://instagram.com"><i class="ic ic-social icon-instagram"></i></a>
+        <a href="http://linkedin.com"><i class="ic ic-social icon-linkedin"></i></a>
+        <a href="http://reddit.com"><i class="ic ic-social icon-reddit"></i></a>
+        <a href="http://twitter.com"><i class="ic ic-social icon-twitter"></i></a>
+        <a href="http://youtube.com"><i class="ic ic-social icon-youtube"></i></a>
         <a href="mailto:email"><i class="ic ic-social icon-mail"></i></a>
       </p>
   
       <span>
-        Copyright &copy; 2020 AXIOM. All rights reserved. Use of this site constitutes acceptance of our <a href="#">User
-          Agreement</a> and <a href="#">Privacy Policy and Cookie Statement</a>.
+        Made with awesauce. Licensed under the MIT License.
       </span>
 
-    </section>
+    </div>
   </footer>
 
 </body>
+
+</html>

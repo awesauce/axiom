@@ -14,13 +14,13 @@ $font-letter-spacing: .01em;
 
 $border-radius: .4rem;
 
-$isIconRounded: true;
-$iconStrokeWidth: 3;
+$is-icon-rounded: true;
+$icon-stroke-width: 3;
 
 // Colors
 //$color-primary: #605987;
 $color-primary: #9e95d3;
-$color-contrast: #fff;
+$color-background: #fff;
 $color-background: #fff;
 
 
@@ -35,6 +35,7 @@ $color-background: #fff;
 @import 'axiom/Button';
 @import 'axiom/Code';
 @import 'axiom/Colors';
+@import 'axiom/Flex';
 @import 'axiom/Footer';
 @import 'axiom/Form';
 @import 'axiom/Grid';
@@ -44,6 +45,7 @@ $color-background: #fff;
 @import 'axiom/Link';
 @import 'axiom/Main';
 @import 'axiom/Message';
+@import 'axiom/Section';
 @import 'axiom/Table';
 @import 'axiom/Typography';
 @import 'axiom/Utility';

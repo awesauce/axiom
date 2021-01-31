@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+<style type="text/css">
+	.st3{ }
+</style>
+<path fill="#FFF" stroke="#302F35" stroke-width="3" stroke-linejoin="round" d="M8,32c0,0,8-16,24-16s24,16,24,16s-8,16-24,16S8,32,8,32z"/><circle fill="#9E95D2" cx="32" cy="32" r="12"/><g fill="#302F35"><circle cx="32" cy="32" r="8"/><path stroke="#302F35" stroke-width="3" stroke-linejoin="round" d="M8,32c0,0,8-16,24-16s24,16,24,16s-8-10-24-10S8,32,8,32z"/></g>
+</svg>

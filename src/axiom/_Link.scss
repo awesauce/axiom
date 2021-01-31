@@ -13,24 +13,32 @@ a {
   &:focus,
   &:hover {
 		text-decoration: underline;
-		color: $color-primary-hover;
   }
 
   &.tile {
     display: block;
-    @include animated-border-hover($color-primary, $color-contrast, .3em);
+    @include animated-border-hover($color-primary, $color-background, .3em);
     font-weight: $font-weight-regular;
     background-color: $color-light;
-    color: $color-body;
+    color: $color-foreground;
 
     & > div {
       padding: $grid-gap / 2;
     }
 
+    /*
+    display: flex;
+    flex-direction: column;
+    & > * {
+      height: 50%;
+      flex: 1;
+    }
+    */
+
     &:focus,
     &:hover {
       text-decoration: none;
-      color: $color-body;
+      color: $color-foreground;
     }
   }
 }

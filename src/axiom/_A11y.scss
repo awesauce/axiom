@@ -1,0 +1,32 @@
+//
+//     /\   \ /  |  / \  |\  /|
+//    /  \  / \  |  \ /  | \/ |
+//
+// Accessibility
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+ // Hidden, except for screen readers
+ // https://a11yproject.com/posts/how-to-hide-content/
+.only-screen-reader {
+  clip: rect(0 0 0 0);
+  position: absolute;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  overflow: hidden;
+
+  .show-on-focus {
+    &:active,
+    &:focus {
+      position: static;
+      width: auto;
+      height: auto;
+      margin: 0;
+      overflow: visible;
+      clip: auto;
+    }
+  }
+}
+

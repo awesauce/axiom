@@ -5,20 +5,76 @@
 // Colors
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
-@mixin color($name, $color, $fg-color) {
-  .color-#{$name} {
-    color: $color !important;
-    border-color: $color !important;
-  }
-  .bg-#{$name} {
-    background-color: $color !important;
-    color: $fg-color;
-  }
+// basic classes for background and foreground shades
+.background-body {
+  background-color: $color-background;
+}
+.background-inverted {
+  background-color: $color-foreground;
 }
 
-@include color("page", $color-background, $color-body);
-@include color("primary", $color-primary, $color-contrast);
-@include color("contrast", $color-contrast, $color-primary);
-@include color("light", $color-light, $color-body);
-@include color("medium", $color-medium, $color-body);
-@include color("dark", $color-dark, $color-light);
+
+// if primary exists, add
+@if $color-primary {
+  $colors: map-merge($colors, ( "primary": $color-primary ) );
+}
+
+// for each color, create a .background-name class
+@each $name, $color in $colors {
+  // determine contrasting foreground color based on lightness
+  //$fg: $color-background;
+  //@if lightness($color) > 50% and lightness($color-background) > 50% {
+    $fg: $color-foreground;
+  //}
+
+  .color-#{$name} {
+    color: $color;
+  }
+
+  
+  .background-#{$name} {
+    background-color: $color;
+    //color: $fg;
+
+    // link
+    a {
+      color: $color-background;
+    }
+
+    h1 {
+      a {
+        color: $fg;
+      }
+    }
+
+    // nav
+    & nav {
+      & > a {
+        color: $fg;
+        &:focus, &:hover {
+          color: $color-background;
+          box-shadow: 0 -.4rem 0 $color-background inset;
+        }
+      }
+    }
+
+    // button
+    .button,
+    button,
+    input[type='button'],
+    input[type='reset'],
+    input[type='submit'] {
+      background-color: $fg;
+      color: $color;
+      
+      @include animated-border-hover($color-background, $color, .2em);
+
+      &:focus,
+      &:hover {
+        background-color: $color-background;
+        color: $color;
+      }
+    }
+
+  }
+}

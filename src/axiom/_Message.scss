@@ -9,22 +9,17 @@
   max-width: 50.0rem;
   margin: 1.4rem auto;
   padding: 0.5rem 1.0rem;
-  color: $color-red;
-  border: 0.1rem solid $color-red;
-  border-left: 1.2rem solid $color-red;
+  border: 0.1rem solid currentColor;
+  border-left: 1.2rem solid currentColor;
   border-radius: $border-radius;
 }
 
 .tag {
-  background-color: $color-body;
+  background-color: $color-foreground;
   color: $color-background !important;
   border-radius: $border-radius * .75;
   padding: 0.1rem 0.4rem;
   font-size: 1.5rem;
   position: relative;
   top: -.25rem;
-}
-
-a:hover > .tag {
-  background-color: $color-primary-hover;
 }

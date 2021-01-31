@@ -8,12 +8,10 @@
 time, address {
   display: inline;
   font-style: normal;
-  @if ($font-h2-stack != $font-stack) {
-    font-family: $font-h2-stack;
-  }
-  font-weight: $font-h2-weight;
-  letter-spacing: $font-h2-letter-spacing;
-  @if $font-h2-is-uppercase {
+  font-family: $display-font-stack;
+  font-weight: $display-font-weight;
+  letter-spacing: $display-font-letter-spacing;
+  @if $display-font-is-uppercase {
     text-transform: uppercase;
   }
 }
@@ -24,7 +22,7 @@ article {
 
   & > * {
     margin: 0;
-    padding: $grid-gap;
+    padding: $grid-gap / 2;
   }
 
   p, h1, h2, table {

@@ -5,95 +5,67 @@
 // Grid
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
-$content-half-width: ($content-width - $grid-gap) / 2;
-$content-third-width: ($content-width - $grid-gap - $grid-gap) / 3;
-$content-third-width-halved: ($content-third-width - $grid-gap) / 2;
+.grid {
+  max-width: $content-width;
+  margin: 0 auto;
+  padding: $grid-gap $content-padding;
+  display: grid;
+  grid-gap: $grid-gap;
+}
+.grid-column-span-2 {
+  grid-column-end: span 1;
+}
+.grid-column-span-3 {
+  grid-column-end: span 1;
+}
 
 @media (min-width: $media-larger-than-mobile) {
   .grid {
-    display: grid;
-    grid-gap: $grid-gap;
-
     grid-template-columns: 
       [content-start left-start] 1fr
       [left-end right-start] 1fr
       [right-end content-end];
-
-
-    &.grid-content {
-      grid-template-columns: 
-        [content-start left-start] minmax(0, $content-half-width)
-        [left-end right-start] minmax(0, $content-half-width)
-        [content-end right-end];
-      
-      &.grid-thirds {
-        grid-template-columns: 
-          [content-start third-a-start] minmax(0, $content-third-width)
-          [third-a-end third-b-start] minmax(0, $content-third-width)
-          [third-b-end third-c-start] minmax(0, $content-third-width)
-          [third-c-end content-end];
-      }
-    }
-
-    &.grid-full {
-      grid-template-columns: 
-        [full-start full-left-start] minmax(0, 1fr)
-        [content-start left-start] minmax(0, $content-half-width)
-        [full-left-end left-end full-right-start right-start] minmax(0, $content-half-width)
-        [content-end right-end] minmax(0, 1fr)
-        [full-end full-right-end];
-
-      &.grid-thirds {
-        grid-template-columns: 
-          [full-start full-left-start] minmax(0, 1fr)
-          [content-start third-a-start] minmax(0, $content-third-width)
-          [third-a-end third-b-start] minmax(0, $content-third-width-halved)
-          [full-left-end left-end full-right-start right-start] minmax(0, $content-third-width-halved)
-          [third-b-end third-c-start] minmax(0, $content-third-width)
-          [content-end third-c-end right-end] minmax(0, 1fr)
-          [full-end] full-right-end;
-      }
-    }
-
-    & > .item-content {
-      grid-column: content;
-    }
-
-    & > .item-left {
-      grid-column: left;
-    }
-    & > .item-right {
-      grid-column: right;
-    }
-
-    & > .item-span-2 {
-      grid-column-end: span 2;
-    }
-    & > .item-span-3 {
-      grid-column-end: span 3;
-    }
+  }
+  .grid-column-span-2 {
+    grid-column-end: span 2;
+  }
+  .grid-column-span-3 {
+    grid-column-end: span 2;
   }
 }
 
 @media (min-width: $media-larger-than-tablet) {
-  .grid {
-    &.grid-three {
-      grid-template-columns: 
-        [content-start left-start] 1fr
-        [left-end center-start] 1fr
-        [center-end right-start] 1fr
-        [right-end content-end];
-
-      & > .item-center {
-        grid-column: center;
-      }
-      & > .item-center-left {
-        grid-column: left / center;
-      }
-      & > .item-center-right {
-        grid-column: center / right;
-      }
-
-    }
+  .grid-3 {
+    grid-template-columns: 
+      [content-start left-start] 1fr
+      [left-end center-start] 1fr
+      [center-end right-start] 1fr
+      [right-end content-end];
   }
+  .grid-column-span-3 {
+    grid-column-end: span 3;
+  }
+}
+
+// Grid columns
+
+.grid-column-content {
+  grid-column: content;
+}
+
+.grid-column-left {
+  grid-column: left;
+}
+.grid-column-right {
+  grid-column: right;
+}
+
+.grid-column-center {
+  grid-column: center;
+}
+.grid-column-center-left {
+  grid-column: left / center;
+}
+.grid-column-center-right {
+  grid-column: center / right;
 }

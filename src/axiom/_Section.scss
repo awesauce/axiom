@@ -2,9 +2,9 @@
 //     /\   \ /  |  / \  |\  /|
 //    /  \  / \  |  \ /  | \/ |
 //
-// Main
+// Message, Info, Tag
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
-main {
-  //padding: $grid-gap*2 0;
+body > section {
+  padding: $grid-gap*2 0;  
 }

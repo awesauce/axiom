@@ -20,27 +20,29 @@ button,
 input[type='button'],
 input[type='reset'],
 input[type='submit'] {
-  @include button-font-style();
+  @include display-font-style();
+  font-size: 2.2rem;
 
   background-color: $color-primary;
-  color: $color-contrast;
+  color: $color-background;
   border: 0;
   border-radius: $border-radius;
   cursor: pointer;
   text-decoration: none;
   white-space: nowrap;
-  padding: 1.4rem 1.7rem;
-  min-height: 6.6rem;
+  //padding: 1.4rem 1.7rem;
+  //min-height: 6.6rem;
+  padding: .8rem 1.7rem;
   
   display: inline-flex;
   align-items: center;
   justify-content: center;
 
-  @include animated-border-hover($color-primary, $color-contrast, .3em);
+  @include animated-border-hover($color-primary, $color-background, .2em);
 
   &:focus,
   &:hover {
-    color: $color-contrast;
+    color: $color-background;
     text-decoration: none;
     outline: 0;
   }
@@ -54,10 +56,14 @@ input[type='submit'] {
     }
   }
 
-  &.button-contrast {
-    background-color: $color-contrast;
-    color: $color-primary;
-    @include animated-border-hover($color-contrast, $color-primary, .3em);
+  //&.button-contrast {
+  //  background-color: $color-background;
+  //  color: $color-primary;
+  //  @include animated-border-hover($color-background, $color-primary, .3em);
+  //}
+
+  nav > & {
+    align-self: center;
   }
 
 }

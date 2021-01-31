@@ -21,7 +21,6 @@ html {
 
 // Reset some margins
 p, h1, h2, table {
-  //margin: 2rem 0;
   margin: 0;
 }
 
@@ -29,7 +28,7 @@ p, h1, h2, table {
 body {
   margin: 0;
   background-color: $color-background;
-  color: $color-body;
+  color: $color-foreground;
   font-family: $font-stack;
   font-size: 2em;
   font-weight: $font-weight-regular;
@@ -45,5 +44,5 @@ body {
 hr {
   border: 0;
   border-top: .2rem solid $color-light;
-  margin: 2.0rem 0;
+  margin: 2rem 0;
 }
