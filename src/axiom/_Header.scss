@@ -50,6 +50,15 @@ body > header {
 
 }
 
+@if $include-dark-theme {
+  body.dark-theme > header {
+    background: $color-dark-background;
+    a, h1 {
+      color: $color-dark-foreground;
+    }
+  }
+}
+
 nav {
   max-width: $content-width;
   height: 100%;

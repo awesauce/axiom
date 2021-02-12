@@ -5,7 +5,7 @@
 // Base
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
-// Set box-sizing globally to handle padding and border widths
+// Set box-sizing globally, so below's border-box applies to all
 *,
 *:after,
 *:before {
@@ -17,6 +17,11 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+}
+
+// Can be used to make A11y big option
+.a11y-big {
+  font-size: 80%;
 }
 
 // Reset some margins
@@ -45,4 +50,16 @@ hr {
   border: 0;
   border-top: .2rem solid $color-light;
   margin: 2rem 0;
+}
+
+
+@if $include-dark-theme {
+  body.dark-theme {
+    background-color: $color-dark-background;
+    color: $color-dark-foreground;
+  }
+
+  .dark-theme::selection {
+    color: $color-dark-background;
+  }
 }

@@ -46,6 +46,12 @@ select {
     border-color: $color-primary !important;
     outline: 0;
   }
+
+  @if $include-dark-theme {
+    .dark-theme & {
+      background-color: $color-dark-background;
+    }
+  }
 }
 
 textarea {

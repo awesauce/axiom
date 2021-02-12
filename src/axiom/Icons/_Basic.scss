@@ -31,6 +31,10 @@
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><g stroke="#{url-col($color-foreground)}" stroke-width="#{$icon-stroke-width}" stroke-linecap="#{$cap}" stroke-linejoin="#{$join}"><line x1="16" y1="16" x2="48" y2="48"/><line x1="48" y1="16" x2="16" y2="48"/></g></svg>');
 }
 
+.icon-dark {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path fill="#{url-col($color-primary)}" stroke="#{url-col($color-foreground)}" stroke-width="#{$icon-stroke-width}" stroke-linejoin="#{$join}" d="M24,32c0-10.9,7.9-19.9,18.3-21.7C39.2,8.8,35.7,8,32,8C18.7,8,8,18.7,8,32s10.7,24,24,24 c3.7,0,7.2-0.8,10.3-2.3C31.9,51.9,24,42.9,24,32z"/></svg>');
+}
+
 .icon-eye {
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><g fill="none" stroke="#{url-col($color-foreground)}" stroke-width="#{$icon-stroke-width}" stroke-linecap="#{$cap}" stroke-linejoin="#{$join}"><path d="M26.5,47.4c1.7,0.4,3.5,0.6,5.5,0.6c16,0,24-16,24-16s-2-4-6.1-8"/><path d="M37.5,16.6C35.7,16.2,33.9,16,32,16C16,16,8,32,8,32s2,4,6.1,8"/><line x1="12" y1="52" x2="52" y2="12"/></g></svg>');
   &.ic-on {
@@ -52,8 +56,8 @@
   }
 }
 
-.icon-close {
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><g stroke="#{url-col($color-foreground)}" stroke-width="#{$icon-stroke-width}" stroke-linecap="#{$cap}" stroke-linejoin="#{$join}"><line x1="16" y1="16" x2="48" y2="48"/><line x1="48" y1="16" x2="16" y2="48"/></g></svg>');
+.icon-light {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><g fill="#{url-col($color-primary)}" stroke="#{url-col($color-foreground)}" stroke-width="#{$icon-stroke-width}" stroke-linecap="#{$cap}" stroke-linejoin="#{$join}"><circle cx="32" cy="32" r="16"/><path d="M15,15l1.4,1.4 M8,32h2 M15,49l1.4-1.4 M32,56v-2 M47.6,47.6L49,49 M54,32h2 M47.6,16.4L49,15 M32,10V8"/></g></svg>');
 }
 
 .icon-mail {
@@ -83,6 +87,13 @@
   }
   &.ic-on {
     background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><polygon fill="#{url-col($color-primary)}" stroke="#{url-col($color-foreground)}" stroke-width="#{$icon-stroke-width}" stroke-linejoin="#{$join}" points="32,8 37.9,23.9 54.8,24.6 41.5,35.1 46.1,51.4 32,42 17.9,51.4 22.5,35.1 9.2,24.6 26.1,23.9 "/></svg>');
+  }
+}
+
+.icon-size {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><g stroke="#{url-col($color-foreground)}" stroke-width="#{$icon-stroke-width}" stroke-linecap="#{$cap}"><g opacity="40%"><line x1="24" y1="16" x2="56" y2="16"/><line x1="40" y1="48" x2="40" y2="16"/></g><line x1="8" y1="32" x2="24" y2="32"/><line x1="16" y1="48" x2="16" y2="32"/></g></svg>');
+  &.ic-on {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><g stroke="#{url-col($color-foreground)}" stroke-width="#{$icon-stroke-width}" stroke-linecap="#{$cap}"><line x1="24" y1="16" x2="56" y2="16"/><line class="st0" x1="40" y1="48" x2="40" y2="16"/><g opacity="40%"><line x1="8" y1="32" x2="24" y2="32"/><line x1="16" y1="48" x2="16" y2="32"/></g></g></svg>');
   }
 }
 

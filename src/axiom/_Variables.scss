@@ -5,11 +5,6 @@
 // Variables
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
-$border-radius: .4rem !default;
-
-$is-icon-rounded: true !default;
-$icon-stroke-width: 3 !default;
-
 // Variables for the media breakpoints
 // em because rem breakpoints don't work on Safari
 $media-larger-than-mobile: 40.0em !default;
@@ -24,6 +19,13 @@ $color-foreground: #292827 !default;
 // Branded color
 $color-primary: #9e95d3 !default;
 
+// Color to contrast with primary for button text, etc.
+@if lightness($color-primary) > 50% and lightness($color-background) > 50% {
+  $color-primary-contrast: $color-foreground !default;
+} @else {
+  $color-primary-contrast: $color-background !default;
+}
+
 // Background colors
 $colors: (
   'red': #DD396A,
@@ -34,6 +36,19 @@ $colors: (
   'yellow': #DDC937,
   'orange': #E2692D
 );
+
+// Dark Theme
+$include-dark-theme: true !default;
+$color-dark-background: $color-foreground !default;
+$color-dark-foreground: $color-background !default;
+$color-dark-primary: $color-primary !default;
+
+
+// Colors shades ––––––––––––––––––––––––––––––––––––
+
+$color-light: mix($color-background, $color-foreground, 93%) !default;
+$color-medium: mix($color-background, $color-foreground, 65%) !default;
+//$color-dark: mix($color-background, $color-foreground, 30%) !default;
 
 
 // Fonts ––––––––––––––––––––––––––––––––––––––––––––
@@ -47,23 +62,25 @@ $font-letter-spacing: .01em !default;
 $display-font-stack: 'Roboto Condensed', 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
 $display-font-weight: 500 !default;
 $display-font-letter-spacing: .02em !default;
-$display-font-line-height: 1.25;
+$display-font-line-height: 1.25 !default;
 $display-font-is-uppercase: true !default;
 
 
 // Other Units ---–––––––––––––––––––––––––––––––––––
 
-$grid-gap: 3rem !default;
-$content-padding: .8rem !default;
-$content-width: 112rem !default;
-$article-width: 86rem !default;
+// Layout units, using em for .a11y-big wont apply. 
+$grid-gap: 3em !default;
+$content-padding: .8em !default;
+$content-width: 112em !default;
+$article-width: 86em !default;
 $animation-speed: 150ms !default;
 
-// Colors shades ––––––––––––––––––––––––––––––––––––
+// Corners for buttons, etc.
+$border-radius: .4rem !default;
 
-$color-light: mix($color-background, $color-foreground, 93%) !default;
-$color-medium: mix($color-background, $color-foreground, 65%) !default;
-//$color-dark: mix($color-background, $color-foreground, 30%) !default;
+// Icon Customization
+$is-icon-rounded: true !default;
+$icon-stroke-width: 3 !default;
 
 
 // Mixins for variable use ––––––––––––––––––––––––––
@@ -77,6 +94,7 @@ $color-medium: mix($color-background, $color-foreground, 65%) !default;
   }
 }
 
+// display font used in a few places
 @mixin display-font-style {
   font-family: $display-font-stack;
   font-weight: $display-font-weight;
@@ -87,6 +105,7 @@ $color-medium: mix($color-background, $color-foreground, 65%) !default;
   }
 }
 
+// consistent hover/focus effect
 @mixin animated-border-hover($color, $bgcolor, $width: .2rem) {
   $half: $width / 2;
   transition: box-shadow $animation-speed ease-out;
