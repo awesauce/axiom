@@ -20,3 +20,10 @@ pre {
   overflow-y: hidden;
   padding: .3rem 1rem;
 }
+
+.dark-theme {
+  code, pre {
+    background: darken($color-foreground, 20%);
+    color: $color-background;
+  }
+}

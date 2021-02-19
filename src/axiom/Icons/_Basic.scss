@@ -27,8 +27,11 @@
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><polyline stroke="#{url-col($color-foreground)}" stroke-width="#{$icon-stroke-width}" stroke-linecap="#{$cap}" stroke-linejoin="#{$join}" fill="none" points="20,8 44,32 20,56 "/></svg>');
 }
 
+$svg: 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">';
+$test1: 'stroke="#{url-col($color-background)}" stroke-width="7" stroke-linecap="#{$cap}" stroke-linejoin="#{$join}"';
+$test: 'stroke="#{url-col($color-foreground)}" stroke-width="#{$icon-stroke-width}" stroke-linecap="#{$cap}" stroke-linejoin="#{$join}"';
 .icon-close {
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><g stroke="#{url-col($color-foreground)}" stroke-width="#{$icon-stroke-width}" stroke-linecap="#{$cap}" stroke-linejoin="#{$join}"><line x1="16" y1="16" x2="48" y2="48"/><line x1="48" y1="16" x2="16" y2="48"/></g></svg>');
+  background-image: url('#{$svg}<g #{$test1}><line x1="16" y1="16" x2="48" y2="48"/><line x1="48" y1="16" x2="16" y2="48"/></g><g #{$test}><line x1="16" y1="16" x2="48" y2="48"/><line x1="48" y1="16" x2="16" y2="48"/></g></svg>');
 }
 
 .icon-dark {

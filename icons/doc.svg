@@ -6,15 +6,16 @@
 	.st0{display:none;}
 	.st1{display:inline;fill:#9E95D3;stroke:#302F35;stroke-width:3;stroke-linejoin:round;}
 	.st2{display:inline;fill:#FFFFFF;stroke:#302F35;stroke-width:3;stroke-linejoin:round;}
-	.st3{fill:#9E95D3;stroke:#302F35;stroke-width:2.0995;stroke-linejoin:round;}
-	.st4{fill:#9E95D3;stroke:#302F35;stroke-width:2.0995;stroke-linecap:round;stroke-linejoin:round;}
+	.st3{fill:#F2F2EB;stroke:#9E95D3;stroke-width:3;stroke-linejoin:round;}
+	.st4{fill:none;stroke:#302F35;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;}
 </style>
 <g class="st0">
 	<rect x="11" y="18" class="st1" width="42" height="28"/>
 	<polygon class="st2" points="53,18 11,18 32,35.5 	"/>
 </g>
-<rect x="16" y="12" class="st3" width="32" height="40"/>
-<line class="st4" x1="24" y1="24" x2="40" y2="24"/>
-<line class="st4" x1="24" y1="32" x2="40" y2="32"/>
-<line class="st4" x1="24" y1="40" x2="40" y2="40"/>
+<rect x="12" y="8" class="st3" width="40" height="48"/>
+<line class="st4" x1="20" y1="20" x2="44" y2="20"/>
+<line class="st4" x1="20" y1="28" x2="44" y2="28"/>
+<line class="st4" x1="20" y1="36" x2="44" y2="36"/>
+<line class="st4" x1="20" y1="44" x2="36" y2="44"/>
 </svg>
