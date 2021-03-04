@@ -11,8 +11,8 @@
   <link rel="icon" type="image/png" href="favicon-32.png" sizes="32x32">
   <link rel="icon" type="image/png" href="favicon-512.png" sizes="512x512">
 
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,500" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700" rel="stylesheet">
 
   <link href="../dist/axiom.css" rel="stylesheet" type="text/css" />
 
@@ -21,18 +21,19 @@
 <body>
 
   <header>
-    <a href="index.html">
-      <img class="header-logo" src="axiom-logotype.svg" />
-    </a>
     <nav>
-      <a href="product.html">Product</a>
-      <a href="blog.html">Blog</a>
+      <h1>
+        <a href="index.html" class="font-regular">
+          <b>AXIOM</b><span class="font-weight-thin">CSS</span>
+        </a>
+      </h1>
+      <a href="style.html">Style</a>
+      <a href="icons.html">Icons</a>
       <a href="article.html">Article</a>
-      <a href="form.html" class="active">Form</a>
+      <a href="forms.html" class="button">Forms</a>
     </nav>
   </header>
-
-  <main class="padding-top-header-height">
+  <div class="padding-top-header-height"></div>
 
   <section class="bg-light">
     <header class="text-align-center">
@@ -43,9 +44,9 @@
     </header>
   </section>
 
-  <main>
+  <main class="responsive-flex">
 
-    <section class="main-left focus-within">
+    <section class="focus-within">
       <h2>Feedback Form</h2>
       <form action=''>
         <div>
@@ -70,7 +71,7 @@
     
     </section>
 
-    <section class="main-right focus-within">
+    <section class="focus-within">
       <form action=''>
         <hr/>
 
@@ -127,7 +128,7 @@
 
     </section>
 
-    <section class="main-full">
+    <section>
 
       <div class="button-row">
         Hello
@@ -157,43 +158,43 @@
 
   </main>
   
+
+
   <footer class="bg-dark">
-    <ul>
-      Header
-      <li><a href="#">Link A</a></li>
-      <li><a href="#">Another Link</a></li>
-      <li><a href="#">Link To C</a></li>
-      <li><a href="#">Fourth Link</a></li>
-      <li><a href="#">Link of D</a></li>
-      <li><a href="#">Last One</a>
-    </ul>
+    <div class="grid">
+      <ul>
+        Header
+        <li><a href="#">Link A</a></li>
+        <li><a href="#">Another Link</a></li>
+        <li><a href="#">Link To C</a></li>
+        <li><a href="#">Fourth Link</a></li>
+        <li><a href="#">Link of D</a></li>
+        <li><a href="#">Last One</a></li>
+      </ul>
+  
+      <ul>
+        Header
+        <li><a href="#">Link A</a></li>
+        <li><a href="#">Another Link</a></li>
+        <li><a href="#">Link To C</a></li>
+        <li><a href="#">Fourth Link</a></li>
+      </ul>
+  
+      <p>
+        <a href="http://facebook.com"><i class="ic ic-social icon-facebook"></i></a>
+        <a href="http://instagram.com"><i class="ic ic-social icon-instagram"></i></a>
+        <a href="http://linkedin.com"><i class="ic ic-social icon-linkedin"></i></a>
+        <a href="http://reddit.com"><i class="ic ic-social icon-reddit"></i></a>
+        <a href="http://twitter.com"><i class="ic ic-social icon-twitter"></i></a>
+        <a href="http://youtube.com"><i class="ic ic-social icon-youtube"></i></a>
+        <a href="mailto:email"><i class="ic ic-social icon-mail"></i></a>
+      </p>
+  
+      <span>
+        Made with awesauce. Licensed under the MIT License.
+      </span>
 
-    <ul>
-      Header</li>
-      <li><a href="#">Link A</a></li>
-      <li><a href="#">Another Link</a></li>
-      <li><a href="#">Link To C</a>
-    </ul>
-
-    <ul>
-      Header</li>
-      <li><a href="#">Link A</a></li>
-      <li><a href="#">Another Link</a></li>
-      <li><a href="#">Link To C</a></li>
-      <li><a href="#">Fourth Link</a>
-    </ul>
-
-    <ul>
-      Header</li>
-      <li><a href="#">Link A</a></li>
-      <li><a href="#">Another Link</a></li>
-      <li><a href="#">Link To C</a>
-    </ul>
-
-    <span>
-      Copyright &copy; 2020 AXIOM. All rights reserved. Use of this site constitutes acceptance of our <a href="#">User
-        Agreement</a> and <a href="#">Privacy Policy and Cookie Statement</a>.
-    </span>
+    </div>
   </footer>
 
 

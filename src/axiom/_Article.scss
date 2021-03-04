@@ -16,62 +16,15 @@ time, address {
   }
 }
 
-$content-side-width: (($content-width - $article-width) / 2) - $grid-gap;
-
 article {
-
-  & > * {
-    margin: 0;
-    padding: $grid-gap / 2;
+  max-width: $article-width;
+  margin: 0 auto;
+  padding: 0 $content-padding;
+  p, h1, h2, table, figure {
+    margin: $base-spacing 0;
   }
-
-  p, h1, h2, table {
-    margin: 2rem 0;
-  }
-
-}
-
-
-@media (min-width: $media-larger-than-mobile) {
-  article {
-    display: grid;
-    grid-template-columns: 
-      [full-start] minmax(0, 1fr)
-      [content-start] minmax(0, $content-side-width)
-      [article-start] minmax(0, $article-width)
-      [article-end] minmax(0, $content-side-width)
-      [content-end] minmax(0, 1fr)
-      [full-end];
-    grid-gap: $grid-gap;
-
-    & > * {
-      padding: 0;
-      grid-column: content;
-    }
-
-    & > header, & > section, & > footer {
-      grid-column: article;
-    }
-
-    aside {
-      grid-column: full;
-      & > section {
-        margin: 0 auto;
-        max-width: $article-width;
-      }
-    }
-
-    .aside-left {
-      grid-column: 2;
-    }
-    .aside-right {
-      grid-column: 4;
-    }
-  }
-}
-
-@media (min-width: $media-larger-than-tablet) {
-  article {
-    
+  figcaption {
+    color: $color-medium;
+    font-size: 75%;
   }
 }

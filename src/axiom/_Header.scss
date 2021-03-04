@@ -7,109 +7,82 @@
 
 $header-height: 6rem;
 
-body > header {
-  @include display-font-style();
-  height: $header-height;
-  font-size: .7em;
-  h1 {
-    font-size: 2em;
-  }
-  button, .button {
-    font-size: 1em;
-  }
-
-  position: fixed;
-  z-index: 9999;
-  width: 100%;
-  border-bottom: 0.1rem solid currentColor;
-  background: $color-background;
-
-  a, h1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: $color-foreground;
-    text-decoration: none;
-
-    &:focus, &:hover {
-      text-decoration: none;
-    }
-  }
-
-  a {
-    &:focus, &:hover {
-      color: $color-primary;
-    }
-  }
-
-  h1 {
-    a:focus, a:hover {
-      color: currentColor;
-    }
-  }
-
-}
-
-@if $include-dark-theme {
-  body.dark-theme > header {
-    background: $color-dark-background;
-    a, h1 {
-      color: $color-dark-foreground;
-    }
-  }
-}
-
-nav {
-  max-width: $content-width;
-  height: 100%;
-  margin: 0 auto;
-  padding: 0 $content-padding;
-  //font-size: 50%;
-
-  display: flex;
-  align-items: stretch;
-  justify-content: flex-end;
-  //min-height: $header-height * 0.7;
-
-  & > * {
-    margin-left: $grid-gap / 2;
-    &:first-child {
-      margin: 0 auto 0 0;
-    }
-  }
-
-  // Bottom line done with shadow
-  & > a {
-    transition: box-shadow $animation-speed ease-out;
-
-    &.active {
-      box-shadow: 0 -.4rem 0 currentColor inset;
-    }
-
-    &:focus, &:hover {
-      box-shadow: 0 -.4rem 0 $color-primary inset;
-    }
-  }
-}
-
 // Element immediately following header moves down 2 rows
 .padding-top-header-height {
   padding-top: $header-height;
 }
 
-@media (min-width: $media-larger-than-mobile) {
-  body > header {
-    font-size: 1em;
-    h1 {
-      font-size: 1.6em;
-    }
+body > header {
+  @include display-font-style();
+  height: $header-height;
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  border-bottom: .1rem solid currentColor;
+  background: $color-background;
 
-    //height: $header-height;
+  font-size:1.6rem;
+  h2, .button  {
+    font-size: 1.6rem;
+  }
+  h1 {
+    font-size: 2rem;
   }
 
   nav {
+    max-width: $content-width;
+    margin: 0 auto;
+    padding: 0 $content-padding;
+    height: 100%;
+
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-end;
+
     & > * {
-      margin-left: $grid-gap;
+      margin-left: 2rem;
+      &:first-child {
+        margin: 0 auto 0 0;
+      }
+    }
+
+    a, h1 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $color-foreground;
+      text-decoration: none;
+  
+      &:focus, &:hover {
+        text-decoration: none;
+      }
+    }
+
+    // Bottom line done with shadow
+    & > a {
+      transition: box-shadow $animation-speed ease-out;
+
+      &.active {
+        box-shadow: 0 -.4rem 0 currentColor inset;
+      }
+
+      &:focus, &:hover {
+        box-shadow: 0 -.4rem 0 $color-primary inset;
+      }
+    }
+
+  }
+
+}
+
+@media (min-width: $media-larger-than-mobile) {
+  body > header {
+    font-size: 2rem;
+    h2, .button  {
+      font-size: 2rem;
+    }
+    h1 {
+      font-size: 4rem;
     }
   }
 }

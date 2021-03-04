@@ -46,6 +46,11 @@ body {
   color: $color-background;
 }
 
+body > main, body > section {
+  max-width: $content-width;
+  margin: 0 auto;
+}
+
 hr {
   border: 0;
   border-top: .2rem solid $color-light;

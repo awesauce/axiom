@@ -21,7 +21,6 @@ $icon-stroke-width: 3;
 //$color-primary: #605987;
 $color-primary: #9e95d3;
 $color-background: #fff;
-$color-background: #fff;
 
 
 // All modules
@@ -31,9 +30,7 @@ $color-background: #fff;
 @import 'axiom/Base';
 
 @import 'axiom/Article';
-@import 'axiom/Blockquote';
 @import 'axiom/Button';
-@import 'axiom/Code';
 @import 'axiom/Colors';
 @import 'axiom/Flex';
 @import 'axiom/Footer';
@@ -43,9 +40,8 @@ $color-background: #fff;
 @import 'axiom/Icons';
 @import 'axiom/Image';
 @import 'axiom/Link';
-@import 'axiom/Main';
 @import 'axiom/Message';
-@import 'axiom/Section';
+@import 'axiom/Quote';
 @import 'axiom/Table';
 @import 'axiom/Typography';
 @import 'axiom/Utility';

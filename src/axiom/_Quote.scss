@@ -2,8 +2,16 @@
 //     /\   \ /  |  / \  |\  /|
 //    /  \  / \  |  \ /  | \/ |
 //
-// Code, Pre
+// Quote, Pre, Code
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+pre, blockquote {
+  margin: 0;
+  border-left: .3rem solid $color-primary;
+  background: $color-light;
+  overflow-y: hidden;
+  padding: $content-padding;
+}
 
 code {
   background: $color-light;
@@ -14,15 +22,8 @@ code {
   top: -.2em;
 }
 
-pre {
-  border-left: .3rem solid $color-primary;
-  background: $color-light;
-  overflow-y: hidden;
-  padding: .3rem 1rem;
-}
-
 .dark-theme {
-  code, pre {
+  code, pre, blockquote {
     background: darken($color-foreground, 20%);
     color: $color-background;
   }
