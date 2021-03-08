@@ -5,84 +5,37 @@
 // Body Header
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
-$header-height: 6rem;
-
-// Element immediately following header moves down 2 rows
-.padding-top-header-height {
-  padding-top: $header-height;
-}
+$main-width: $media-larger-than-tablet * 0.7;
 
 body > header {
-  @include display-font-style();
-  height: $header-height;
-  position: fixed;
-  z-index: 9999;
-  width: 100%;
-  border-bottom: .1rem solid currentColor;
-  background: $color-background;
+  background: $color-primary;
+}
 
-  font-size:1.6rem;
-  h2, .button  {
-    font-size: 1.6rem;
+body {
+  & > header {
+    min-height: 50vh;
   }
-  h1 {
-    font-size: 2rem;
+  & > main {
+    //width: 100%;
   }
-
-  nav {
-    max-width: $content-width;
-    margin: 0 auto;
-    padding: 0 $content-padding;
-    height: 100%;
-
-    display: flex;
-    align-items: stretch;
-    justify-content: flex-end;
-
-    & > * {
-      margin-left: 2rem;
-      &:first-child {
-        margin: 0 auto 0 0;
-      }
-    }
-
-    a, h1 {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: $color-foreground;
-      text-decoration: none;
-  
-      &:focus, &:hover {
-        text-decoration: none;
-      }
-    }
-
-    // Bottom line done with shadow
-    & > a {
-      transition: box-shadow $animation-speed ease-out;
-
-      &.active {
-        box-shadow: 0 -.4rem 0 currentColor inset;
-      }
-
-      &:focus, &:hover {
-        box-shadow: 0 -.4rem 0 $color-primary inset;
-      }
-    }
-
-  }
-
 }
 
 @media (min-width: $media-larger-than-mobile) {
-  body > header {
-    font-size: 2rem;
-    h2, .button  {
-      font-size: 2rem;
+  body.magazine {
+    & > header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 30vw;
     }
-    h1 {
-      font-size: 4rem;
+    & > main {
+      position: absolute;
+      left: 30vw;
+      width: $main-width;
     }
   }
+}
+
+@media (min-width: $media-larger-than-tablet) {
 }

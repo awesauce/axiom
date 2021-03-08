@@ -15,20 +15,9 @@
 }
 
 .tag {
-  background-color: $color-foreground;
-  color: $color-background;
   border-radius: $border-radius * .75;
   padding: 0.1rem 0.4rem;
   font-size: 1.5rem;
   position: relative;
   top: -.25rem;
-}
-
-@if $include-dark-theme {
-  .dark-theme {
-    .tag {
-      background-color: $color-dark-foreground;
-      color: $color-dark-background;
-    }
-  }
 }

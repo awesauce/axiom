@@ -5,19 +5,10 @@
 // Colors
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
-// basic classes for background and foreground shades
-.background-body {
-  background-color: $color-background;
-}
-.background-inverted {
-  background-color: $color-foreground;
-}
-
-
 // if primary exists, add
-@if $color-primary {
-  $colors: map-merge($colors, ( "primary": $color-primary ) );
-}
+//@if $color-primary {
+//  $colors: map-merge($colors, ( "primary": $color-primary ) );
+//}
 
 // for each color, create a .background-name class
 @each $name, $color in $colors {
@@ -26,36 +17,17 @@
   //@if lightness($color) > 50% and lightness($color-background) > 50% {
     $fg: $color-foreground;
   //}
+  
 
-  .color-#{$name} {
-    color: $color;
+  body.color-#{$name} > header, header.color-#{$name} {
+    background: $color;
   }
 
-  
-  .background-#{$name} {
-    background-color: $color;
-    //color: $fg;
+  .color-#{$name} {
 
     // link
     a {
-      color: $color-background;
-    }
-
-    h1 {
-      a {
-        color: $fg;
-      }
-    }
-
-    // nav
-    & nav {
-      & > a {
-        color: $fg;
-        &:focus, &:hover {
-          color: $color-background;
-          box-shadow: 0 -.4rem 0 $color-background inset;
-        }
-      }
+      color: $color;
     }
 
     // button
@@ -64,10 +36,10 @@
     input[type='button'],
     input[type='reset'],
     input[type='submit'] {
-      background-color: $fg;
-      color: $color;
+      background-color: $color;
+      color: $fg;
       
-      @include animated-border-hover($color-background, $color, .2em);
+      @include animated-border-hover($color, $color-background, .2em);
 
       &:focus,
       &:hover {

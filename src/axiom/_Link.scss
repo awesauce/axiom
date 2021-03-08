@@ -42,15 +42,3 @@ a {
     }
   }
 }
-
-@if $include-dark-theme {
-  a.tile {
-    background-color: $color-light;
-    color: $color-dark-foreground;
-
-    &:focus,
-    &:hover {
-      color: $color-dark-foreground;
-    }
-  }
-}

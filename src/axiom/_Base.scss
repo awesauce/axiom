@@ -19,10 +19,6 @@ html {
   font-size: 62.5%;
 }
 
-// Can be used to make A11y big option
-.a11y-big {
-  font-size: 80%;
-}
 
 // Reset some margins
 p, h1, h2, table {
@@ -32,8 +28,6 @@ p, h1, h2, table {
 // Default body styles
 body {
   margin: 0;
-  background-color: $color-background;
-  color: $color-foreground;
   font-family: $font-stack;
   font-size: 2em;
   font-weight: $font-weight-regular;
@@ -41,10 +35,6 @@ body {
   line-height: 1.6;
 }
 
-::selection {
-  background: $color-primary;
-  color: $color-background;
-}
 
 body > main, body > section {
   max-width: $content-width;
@@ -52,19 +42,7 @@ body > main, body > section {
 }
 
 hr {
+  border-top: .2rem solid currentColor;
   border: 0;
-  border-top: .2rem solid $color-light;
   margin: 2rem 0;
-}
-
-
-@if $include-dark-theme {
-  body.dark-theme {
-    background-color: $color-dark-background;
-    color: $color-dark-foreground;
-  }
-
-  .dark-theme::selection {
-    color: $color-dark-background;
-  }
 }

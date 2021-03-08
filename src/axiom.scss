@@ -29,7 +29,9 @@ $color-background: #fff;
 @import 'axiom/Variables';
 @import 'axiom/Base';
 
+@import 'axiom/A11y';
 @import 'axiom/Article';
+@import 'axiom/Aside';
 @import 'axiom/Button';
 @import 'axiom/Colors';
 @import 'axiom/Flex';
@@ -43,5 +45,6 @@ $color-background: #fff;
 @import 'axiom/Message';
 @import 'axiom/Quote';
 @import 'axiom/Table';
+@import 'axiom/Theme';
 @import 'axiom/Typography';
 @import 'axiom/Utility';

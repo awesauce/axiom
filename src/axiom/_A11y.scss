@@ -30,3 +30,17 @@
   }
 }
 
+.dark-mode {
+  //background: #000;
+  filter: invert(100%);
+
+  img:not([src*=".svg"]), video, .dark-mode-no-invert, .ic-social {  
+    filter: invert(100%);
+  }
+
+}
+
+// Can be used to make A11y big option
+.a11y-big {
+  font-size: 80%;
+}
