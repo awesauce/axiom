@@ -19,7 +19,9 @@
   //}
   
 
-  body.color-#{$name} > header, header.color-#{$name} {
+  body.color-#{$name} > header,
+  header.color-#{$name},
+  .background-#{$name} {
     background: $color;
   }
 
